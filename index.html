@@ -1,9 +1,12 @@
-<html>
+<html ng-app="proCityHoopsApp">
 <head>
 	<title>ProCity Hoops</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/main.css" rel="stylesheet">
+	<script src="/javascript/app.js"></script>
 	<script src="https://use.fontawesome.com/7eedd9d669.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -14,13 +17,13 @@
 		<div class="container-fluid">
 			<a href="#"><img src="/assets/images/ProCityHoopsIcon.png" style="max-height: 50px;"></a>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">Home</a></li>
+				<li class="active"><a href="#/">Home</a></li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Eastern Conference</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Toronto Raptors</a></li>
-						<li><a href="#">Indiana Pacers</a></li>
-						<li><a href="#">Cleveland Cavaliers</a></li>
+						<li><a href="#toronto-raptors">Toronto Raptors</a></li>
+						<li><a href="#indiana-pacers">Indiana Pacers</a></li>
+						<li><a href="#cleveland-cavaliers">Cleveland Cavaliers</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -42,7 +45,7 @@
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Featured Articles</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Page 1-1</a></li>
+						<li><a href="#fantasy-football">Fantasy Football</a></li>
 						<li><a href="#">Page 1-2</a></li>
 						<li><a href="#">Page 1-3</a></li>
 					</ul>
@@ -64,13 +67,7 @@
 		<li><i class="fa fa-instagram fa-3x" aria-hidden="true" style="color: #9b6954"></i></li>
 	</ul>
 	<!-- Content -->
-	<div style="margin-left: 70px;">
-		<img src="/assets/images/tyus_1_orig.jpg" style="width: 961px;">
-		<img src="/assets/images/tyus_1_orig.jpg" style="width: 961px;">
-		<img src="/assets/images/tyus_1_orig.jpg" style="width: 961px;">
-		<img src="/assets/images/tyus_1_orig.jpg" style="width: 961px;">
-		<img src="/assets/images/tyus_1_orig.jpg" style="width: 961px;">
-	</div>
+	<div style="margin-left: 70px;" ng-view></div>
 	<!-- Footer? -->
 </body>
 </html>

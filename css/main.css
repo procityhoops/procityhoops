@@ -2,6 +2,10 @@
     padding: 9px 0;
 }
 
+body { 
+    padding-top: 65px; 
+}
+
 .dropdown-menu .sub-menu {
     left: 100%;
     position: absolute;
@@ -22,9 +26,9 @@
     margin-top: 0;
 }
 
-body {
+/*body {
   background: url(http://i43.tinypic.com/vewt4k.png);
-}
+}*/
 
 #social-sidebar {
     left: 0;
