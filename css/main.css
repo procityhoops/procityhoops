@@ -26,12 +26,16 @@ body {
     margin-top: 0;
 }
 
-/*body {
+body {
   background: url(http://i43.tinypic.com/vewt4k.png);
-}*/
+}
 
 #social-sidebar {
     left: 0;
     position: fixed;
     top: 25%;
+}
+
+#social-sidebar li {
+    list-style-type: none;
 }
