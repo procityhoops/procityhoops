@@ -1,0 +1,24 @@
+{
+  "name": "procityhoops",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest" 
+  },
+  "description": "Pro City Hoops Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "jo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/procityhoops/procityhoops.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/procityhoops/procityhoops/issues"
+  },
+  "homepage": "https://github.com/procityhoops/procityhoops#readme"
+}
