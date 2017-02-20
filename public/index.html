@@ -1,77 +1,177 @@
 <html ng-app="proCityHoopsApp">
+
 <head>
+
 	<title>ProCity Hoops</title>
+
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
 	<link href="/css/main.css" rel="stylesheet">
+
 	<script src="/js/appRoutes.js"></script>
+
 	<script src="/js/app.js"></script>
+
+	<script src="/js/slideshow.js"></script>
+
+
+
 	<script src="https://use.fontawesome.com/7eedd9d669.js"></script>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
+
 </head>
+
 <body>
+
 	<!-- Top navbar  -->
+
 	<nav class="navbar navbar-default navbar-fixed-top">
+
 		<div class="container-fluid">
+
 			<a href="#"><img src="/assets/images/ProCityHoopsIcon.png" style="max-height: 50px;"></a>
+
 			<ul class="nav navbar-nav navbar-right">
+
 				<li class="active"><a href="#/">Home</a></li>
+
 				<li class="dropdown">
+
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Eastern Conference</a>
+
 					<ul class="dropdown-menu">
-						<li><a href="#toronto-raptors">Toronto Raptors</a></li>
-						<li><a href="#indiana-pacers">Indiana Pacers</a></li>
+
+						<li><a href="#atlanta-hawks">Atlanta Hawks</a></li>
+						<li><a href="#boston-celtics">Boston Celtics</a></li>
+						<li><a href="#brooklyn-nets">Brooklyn Nets</a></li>
+						<li><a href="#charlotte-hornets">Charlotte Hornets</a></li>
+						<li><a href="#chicago-bulls">Chicago Bulls</a></li>
 						<li><a href="#cleveland-cavaliers">Cleveland Cavaliers</a></li>
+						<li><a href="#detroit-pistons">Detroit Pistons</a></li>
+						<li><a href="#indiana-pacers">Indiana Pacers</a></li>
+						<li><a href="#miami-heat">Miami Heat</a></li>
+						<li><a href="#milwaukee-bucks">Milwaukee Bucks</a></li>
+						<li><a href="#new-york-knicks">New York Knicks</a></li>
+						<li><a href="#orlando-magic">Orlando Magic</a></li>
+						<li><a href="#philadelphia-76ers">Philadelphia 76ers</a></li>
+						<li><a href="#toronto-raptors">Toronto Raptors</a></li>
+						<li><a href="#washington-wizards">Washington Wizards</a></li>
+
 					</ul>
+
 				</li>
+
 				<li class="dropdown">
+
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Western Conference</a>
+
 					<ul class="dropdown-menu">
-						<li><a href="#">Minnesota Timberwolves</a></li>
-						<li><a href="#">Golden State Warriors</a></li>
-						<li><a href="#">Los Angeles Lakers</a></li>
+
+						<li><a href="#dallas-mavericks">Dallas Mavericks</a></li>
+						<li><a href="#denver-nuggets">Denver Nuggets</a></li>
+						<li><a href="#golden-state-warriors">Golden State Warriors</a></li>
+						<li><a href="#houston-rockets">Houston Rockets</a></li>
+						<li><a href="#los-angeles-clippers">Los Angeles Clippers</a></li>
+						<li><a href="#los-angeles-lakers">Los Angeles Lakers</a></li>
+						<li><a href="#memphis-grizzlies">Memphis Grizzlies</a></li>
+						<li><a href="#minnesota-timberwolves">Minnesota Timberwolves</a></li>
+						<li><a href="#new-orleans-pelicans">New Orleans Pelicans</a></li>
+						<li><a href="#oklahoma-city-thunder">Oklahoma City Thunder</a></li>
+						<li><a href="#phoenix-suns">Phoenix Suns</a></li>
+						<li><a href="#portland-trail-blazers">Portland Trail Blazers</a></li>
+						<li><a href="#sacramento-kings">Sacramento Kings</a></li>
+						<li><a href="#san-antonio-spurs">San Antonio Spurs</a></li>
+						<li><a href="#utah-jazz">Utah Jazz</a></li>
+
 					</ul>
+
 				</li>
+
 				<li class="dropdown">
+
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">NBA Stats</a>
+
 					<ul class="dropdown-menu">
+
 						<li><a href="#">Page 1-1</a></li>
+
 						<li><a href="#">Page 1-2</a></li>
+
 						<li><a href="#">Page 1-3</a></li>
+
 					</ul>
+
 				</li>
+
 				<li class="dropdown">
+
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Featured Articles</a>
+
 					<ul class="dropdown-menu">
+
 						<li><a href="#fantasy-football">Fantasy Football</a></li>
+
 						<li><a href="#">Page 1-2</a></li>
+
 						<li><a href="#">Page 1-3</a></li>
+
 					</ul>
+
 				</li>
+
 				<li class="dropdown">
+
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Trade Rumors</a>
+
 					<ul class="dropdown-menu">
+
 						<li><a href="#">Page 1-1</a></li>
+
 						<li><a href="#">Page 1-2</a></li>
+
 						<li><a href="#">Page 1-3</a></li>
+
 					</ul>
+
 				</li>
+
 			</ul>
+
 		</div>
+
 	</nav>
+
 	<!-- Social Media sidebar -->
+
 	<ul id="social-sidebar" style="padding-left: 10px">
+
 		<li>
+
 			<a href="https://twitter.com/ProCityHoops" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="color: #00aced"></i>
+
 			</a
+
 		></li>
+
 		<li><i class="fa fa-instagram fa-3x" aria-hidden="true" style="color: #9b6954"></i></li>
+
 	</ul>
+
 	<!-- Content -->
+
 	<div style="margin-left: 70px;" ng-view></div>
+
 	<!-- Footer? -->
+
 </body>
+
 </html>

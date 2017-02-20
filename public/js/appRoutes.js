@@ -20,7 +20,7 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 	})
 
 	.when('/fantasy-football', {
-		templateUrl : 'articles/Article1.html'
+		templateUrl : 'articles/TradeDeadlineBreakdownArticle.html'
 	})
 
 });
