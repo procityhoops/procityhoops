@@ -131,4 +131,9 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/TradeDeadlineBreakdownArticle.html'
 	})
 
+	.when('/team/:teamID', {
+		templateUrl : 'views/team-page.html',
+		controller: 'TeamController'
+	})
+
 });
