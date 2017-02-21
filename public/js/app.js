@@ -1,1 +1,1 @@
-angular.module('proCityHoopsApp', ['ngRoute', 'appRoutes', 'IndexCtrl', 'TeamCtrl']);
+angular.module('proCityHoopsApp', ['ngRoute', 'appRoutes', 'IndexCtrl', 'TeamCtrl', 'HomeCtrl']);

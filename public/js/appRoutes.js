@@ -4,7 +4,8 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 
 		// route for the home page
 	.when('/', {
-		templateUrl : 'home.html'
+		templateUrl : 'home.html',
+		controller: 'HomeController'
 	})
 
 	.when('/atlanta-hawks', {
