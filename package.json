@@ -2,9 +2,10 @@
   "name": "procityhoops",
   "version": "1.0.0",
   "dependencies": {
-    "bootstrap": "latest",
     "angular": "latest",
-    "angular-route": "latest" 
+    "angular-route": "latest",
+    "bootstrap": "latest",
+    "nba.js": "^0.3.2"
   },
   "description": "Pro City Hoops Website",
   "main": "server.js",
