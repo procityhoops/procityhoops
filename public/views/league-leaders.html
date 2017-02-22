@@ -1,0 +1,29 @@
+<img id="loadingIcon" src="assets/images/loading.gif"/>
+<div id="league-leaders-table" style="display: none;">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Team</th>
+				<th>Games Played</th>
+				<th>Min/game</th>
+				<th>3pt FG%</th>
+				<th>FG%</th>
+				<th>FT%</th>
+				<th>Pts/game</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="player in players | limitTo: 15">
+				<td>{{player.player}}</td>
+				<td>{{player.team}}</td>
+				<td>{{player.gp}}</td>
+				<td>{{player.min}}</td>
+				<td>{{player.fg3_pct}}</td>
+				<td>{{player.fg_pct}}</td>
+				<td>{{player.ft_pct}}</td>
+				<td><b>{{player.pts}}</b></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

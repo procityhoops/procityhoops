@@ -1,3 +1,30 @@
- <img id="loadingIcon" src="assets/images/loading.gif"/>
- <h1>{{city}} {{teamName}}</h1>
- <div ng-repeat="player in players">{{player.display_first_last}}</div>
+<h1>{{currentTeam}}</h1>
+<img id="loadingIcon" src="assets/images/loading.gif"/>
+<div id="player-table" style="display: none;">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>College</th>
+				<th>Height</th>
+				<th>Weight</th>
+				<th>Age</th>
+				<th>Points</th>
+				<th>Reb</th>
+				<th>Ast</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="player in players">
+				<td>{{player.player_name}}</td>
+				<td>{{player.college}}</td>
+				<td>{{player.player_height}}</td>
+				<td>{{player.player_weight}}</td>
+				<td>{{player.age}}</td>
+				<td>{{player.pts}}</td>
+				<td>{{player.reb}}</td>
+				<td>{{player.ast}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

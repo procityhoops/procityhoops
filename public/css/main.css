@@ -39,3 +39,9 @@ body {
 #social-sidebar li {
     list-style-type: none;
 }
+
+#loadingIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

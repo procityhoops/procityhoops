@@ -137,4 +137,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		controller: 'TeamController'
 	})
 
+	.when('/league-leaders', {
+		templateUrl : 'views/league-leaders.html',
+		controller: 'LeagueLeadersController'
+	})
+
+
 });

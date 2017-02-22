@@ -13,9 +13,12 @@ module.exports = function(app) {
 		});
 	})
 
-	app.get('/api/teamRoster/:teamID', function (req, response) {
-		nba.stats.teamRoster({
-			year: '2016-17',
+	app.get('/api/playersByTeam/:teamID', function (req, response) {
+		nba.stats.playerBioStats({
+			LeagueID: '00',
+			Season: '2016-17',
+			perMode: 'PerGame',
+			seasonType: 'Regular Season',
 			TeamID: req.params.teamID
 		}).then(function(res) {
 			response.send(res)
@@ -24,10 +27,14 @@ module.exports = function(app) {
 		});
 	})
 
-	app.get('/api/teamRosters/:teamName', function (req, response) {
-		nba.data.teamRoster({
-			year: 2016,
-			teamName: req.params.teamName
+	app.get('/api/leagueleaders', function (req, response) {
+		nba.stats.leagueLeaders({
+			LeagueID: '00',
+			Season: '2016-17',
+			perMode: 'PerGame',
+			seasonType: 'Regular Season',
+			scope: 'RS',
+			statCategory: 'pts'
 		}).then(function(res) {
 			response.send(res)
 		}).catch(function(err) {
@@ -35,17 +42,7 @@ module.exports = function(app) {
 		});
 	})
 
-	app.get('/api/allplayers', function (req, response) {
-		nba.stats.allPlayers({
-			LeagueID: '00',
-			Season: '2016-17',
-			IsOnlyCurrentSeason: 1
-		}).then(function(res) {
-			response.send(res)
-		}).catch(function(err) {
-			console.error(err);
-		});
-	})
+	
 
 	// frontend routes =========================================================
 	// route to handle all angular requests
