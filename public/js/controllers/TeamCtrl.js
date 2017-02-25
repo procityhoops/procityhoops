@@ -1,21 +1,27 @@
 angular.module('TeamCtrl', []).controller('TeamController', function($scope, $routeParams, $http, $filter) {
 
+	function isScopeLoaded() {
+		if ($scope.players && $scope.standings && $scope.recentGames)
+		{
+			// everything we need on the page is loaded. 
+			$('#loadingIcon').hide();
+			$('#team-page-content').show();
+		}
+	}
+
 	$scope.currentTeamId = $routeParams.teamID;
 
 	$http.get("/api/playersByTeam/"+$scope.currentTeamId)
 		.then(function(response){ 
 			$scope.players = response.data.LeagueDashPlayerBioStats;
-
-			$('#loadingIcon').hide();
-			$('#player-table').show();
+			isScopeLoaded();
 	});
 
 	$http.get("/api/teamGameLog/"+$scope.currentTeamId)
 		.then(function(response){ 
 
 			$scope.recentGames = response.data.TeamGameLog.slice(0, 5)
-			
-			$('#team-last5-games').show();
+			isScopeLoaded();
 	});
 
 	$http.get("/api/conferenceStandings")
@@ -38,11 +44,10 @@ angular.module('TeamCtrl', []).controller('TeamController', function($scope, $ro
 					var teamIndex = conferenceStandings.map(function(e) { return e.teamId; }).indexOf($scope.currentTeamId)
 					$scope.standings = conferenceStandings.slice((teamIndex - 3) <= 0 ? 0 : teamIndex - 3, teamIndex + 4)
 				}
+
+				isScopeLoaded();
 			})
 	});
-
-
-
 
 	$scope.$parent.$watch('teams', function (val) {
 		if (val)
