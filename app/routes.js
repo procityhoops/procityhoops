@@ -13,6 +13,29 @@ module.exports = function(app) {
 		});
 	})
 
+	app.get('/api/conferenceStandings', function (req, response) {
+		nba.data.conferenceStandings({
+			year: 2016
+		}).then(function(res) {
+			response.send(res)
+		}).catch(function(err) {
+			console.error(err);
+		});
+	})
+
+	app.get('/api/teamGameLog/:teamID', function (req, response) {
+		nba.stats.teamGamelog({
+			LeagueID: '00',
+			Season: '2016-17',
+			SeasonType: 'Regular Season',
+			TeamID: req.params.teamID
+		}).then(function(res) {
+			response.send(res)
+		}).catch(function(err) {
+			console.error(err);
+		});
+	})
+
 	app.get('/api/playersByTeam/:teamID', function (req, response) {
 		nba.stats.playerBioStats({
 			LeagueID: '00',
