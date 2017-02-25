@@ -25,10 +25,12 @@ angular.module('TeamCtrl', []).controller('TeamController', function($scope, $ro
 				{
 					if ($filter('filter')(val, {teamId: $scope.currentTeamId})[0].confName == 'East')
 					{
+						$scope.conferenceName = "East";
 						var conferenceStandings = response.data.league.standard.conference.east;
 					}
 					else 
 					{
+						$scope.conferenceName = "West";
 						var conferenceStandings = response.data.league.standard.conference.west;
 					}
 
