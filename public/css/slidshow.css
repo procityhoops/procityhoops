@@ -43,7 +43,8 @@
   font-size: 14px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 12;
+  left: 22;
 }
 
 /* The dots/bullets/indicators */

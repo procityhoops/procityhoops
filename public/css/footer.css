@@ -1,6 +1,6 @@
 footer {
 	width: 100%;
-	height: 450px;
+	height: 500px;
 	background: #183951;
 	margin-top: 500px;
 }
@@ -11,14 +11,17 @@ footer {
 	margin: 0 auto;
 }
 
-h3 {
+h2 {
+	font-size: 40px;
 	color: #ffffff;
 }
 
-div.scoial {
+div.social {
 	float: left;
+	margin-left: 75px;
 	margin-top: 20px;
 }
+
 
 a.social {
 	margin-right: 15px;
@@ -26,7 +29,7 @@ a.social {
 
 div.contact {
 	float: right;
-	margin-right: 200px;
+	margin-right: 75px;
 	margin-top: 20px;
 }
 
@@ -55,6 +58,11 @@ input.submit {
 	color: #183951;
 	border: none;
 	border-radius: 5px;
+}
+
+div.copyright {
+	color: #ffffff;
+	margin-bottom: 10px;
 }
 
 input.submit:hover {
