@@ -1,0 +1,70 @@
+footer {
+	width: 100%;
+	height: 500px;
+	background: #183951;
+	margin-top: 500px;
+}
+
+#foot {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 40px;
+	color: #ffffff;
+}
+
+div.social {
+	float: left;
+	margin-left: 75px;
+	margin-top: 20px;
+}
+
+
+a.social {
+	margin-right: 15px;
+}
+
+div.contact {
+	float: right;
+	margin-right: 75px;
+	margin-top: 20px;
+}
+
+label {
+	color: #ffffff;
+}
+
+input.text {
+	height: 30px;
+	width: 250px;
+	border-radius: 5px;
+	border: none;
+}
+
+textarea.message {
+	height: 100px;
+	width: 250px;
+	border-radius: 5px;
+	border: none;
+}
+
+input.submit {
+	width: 60px;
+	height: 25px;
+	background-color: #ffffff;
+	color: #183951;
+	border: none;
+	border-radius: 5px;
+}
+
+div.copyright {
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+input.submit:hover {
+	text-decoration: underline;
+}
