@@ -22,7 +22,7 @@
 	<script src="/js/controllers/HomeCtrl.js"></script>
 	<script src="/js/controllers/LeagueLeadersCtrl.js"></script>
 
-		<script src="/js/slideshow.js"></script>
+	<script src="/js/slideshow.js"></script>
 
 
 
@@ -55,8 +55,8 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Eastern Conference</a>
 
 					<ul class="dropdown-menu">
-						<li ng-repeat="team in teams | filter:{isNBAFranchise:true, confName:'East'}">
-							<a href="#team/{{team.teamId}}">{{team.fullName}}</a>
+						<li ng-repeat="team in teams | filter:{conference:'East'}">
+							<a href="#team/{{team.teamId}}">{{team.name}}</a>
 						</li>
 
 						<!-- <li><a href="#atlanta-hawks">Atlanta Hawks</a></li>
@@ -83,8 +83,8 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Western Conference</a>
 
 					<ul class="dropdown-menu">
-						<li ng-repeat="team in teams | filter:{isNBAFranchise:true, confName:'West'}">
-							<a href="#team/{{team.teamId}}">{{team.fullName}}</a>
+						<li ng-repeat="team in teams | filter:{conference:'West'}">
+							<a href="#team/{{team.teamId}}">{{team.name}}</a>
 						</li>
 					</ul>
 

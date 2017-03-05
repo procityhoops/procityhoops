@@ -1,7 +1,7 @@
 angular.module('IndexCtrl', []).controller('IndexController', function($scope, $http) {
 
-	$http.get("/api/teams")
+	$http.get("/api/team")
 		.then(function(response){ 
-			$scope.teams = response.data.league.standard;
+			$scope.teams = response.data;
 	});
 });

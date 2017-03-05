@@ -1,4 +1,3 @@
-<img id="loadingIcon" src="assets/images/loadingAnimation.svg"/>
 <div class="row" id="team-page-content" style="display: none;">
 	<div id="player-table" class="col-lg-8">
 		<h3>{{currentTeam}}</h3>
@@ -17,14 +16,14 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="player in players">
-					<td>{{player.player_name}}</td>
+					<td>{{player.name}}</td>
 					<td>{{player.college}}</td>
-					<td>{{player.player_height}}</td>
-					<td>{{player.player_weight}}</td>
+					<td>{{player.height}}</td>
+					<td>{{player.weight}}</td>
 					<td>{{player.age}}</td>
-					<td>{{player.pts}}</td>
-					<td>{{player.reb}}</td>
-					<td>{{player.ast}}</td>
+					<td>{{player.pointsPerGame}}</td>
+					<td>{{player.reboundsPerGame}}</td>
+					<td>{{player.assistsPerGame}}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -37,14 +36,16 @@
 					<tr>
 						<th>Matchup</th>
 						<th>Date</th>
+						<th>Score</th>
 						<th>W/L</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr ng-repeat="game in recentGames">
 						<td>{{game.matchup}}</td>
-						<td>{{game.game_date}}</td>
-						<td ng-class="game.wl == 'W' ? 'game-won' : 'game-lost'">{{game.wl}}</td>
+						<td>{{game.gameDate | date : "M/d/yy"}}</td>
+						<td>{{game.score}}</td>
+						<td ng-class="game.winLoss === 'W' ? 'game-won' : 'game-lost'">{{game.winLoss}}</td>
 					</tr>
 				</tbody>
 			</table>
@@ -63,10 +64,10 @@
 					</thead>
 					<tbody>
 						<tr ng-repeat="team in standings" ng-class="{ 'bold': team.teamId == currentTeamId }">
-							<td width="15%">{{team.confRank}}</td>
-							<td width="50%">{{(teams | filter:{teamId:team.teamId})[0].fullName}}</td>
+							<td width="15%">{{team.conferenceRank}}</td>
+							<td width="50%">{{(teams | filter:{teamId:team.teamId})[0].name}}</td>
 							<td width="15%">{{team.win}} - {{team.loss}}</td>
-							<td with="15%">{{team.gamesBehind}}</td>
+							<td with="15%">{{team.conferenceGamesBehind}}</td>
 						</tr>
 					</tbody>
 				</table>
