@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 var teamSchema = new mongoose.Schema({
 	teamId: Number,
 	name: String,
+	nickname: String,
 	conference: String,
 	win: Number,
 	loss: Number,

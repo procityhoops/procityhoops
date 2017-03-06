@@ -79,7 +79,6 @@ var saveTeams = function () {
 		nba.data.teams({
 			year: 2016
 		}).then(function(res) {
-
 			Team.remove(function(err,removed) {
 				console.log("Removed " + removed + " teams.");
 
@@ -100,6 +99,7 @@ var saveTeams = function () {
 						var team = new Team();
 						team.teamId = obj.teamId;
 						team.name = obj.fullName;
+						team.nickname = obj.nickname;
 						team.conference = obj.confName;
 						team.win = teamStandings.win;
 						team.loss = teamStandings.loss;
