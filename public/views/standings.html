@@ -1,0 +1,23 @@
+<h3>{{conference}} Conference Standings</h3>
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th></th>
+			<th></th>
+			<th>Win</th>
+			<th>Loss</th>
+			<th>Pct</th>
+			<th>GB</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="team in standings" ng-class="{ 'playoff-line': team.conferenceRank === 8 }">
+			<td>{{team.conferenceRank}}</td>
+			<td>{{team.name}}</td>
+			<td>{{team.win}}</td>
+			<td>{{team.loss}}</td>
+			<td>{{team.winPct}}</td>
+			<td>{{team.conferenceGamesBehind}}</td>
+		</tr>
+	</tbody>
+</table>

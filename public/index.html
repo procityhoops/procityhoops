@@ -21,7 +21,7 @@
 	<script src="/js/controllers/TeamCtrl.js"></script>
 	<script src="/js/controllers/HomeCtrl.js"></script>
 	<script src="/js/controllers/LeagueLeadersCtrl.js"></script>
-
+	<script src="/js/controllers/StandingsCtrl.js"></script>
 	<script src="/js/slideshow.js"></script>
 
 
@@ -62,23 +62,6 @@
 						<li ng-repeat="team in teams | filter:{conference:'East'}">
 							<a href="#team/{{team.teamId}}">{{team.name}}</a>
 						</li>
-
-						<!-- <li><a href="#atlanta-hawks">Atlanta Hawks</a></li>
-						<li><a href="#boston-celtics">Boston Celtics</a></li>
-						<li><a href="#brooklyn-nets">Brooklyn Nets</a></li>
-						<li><a href="#charlotte-hornets">Charlotte Hornets</a></li>
-						<li><a href="#chicago-bulls">Chicago Bulls</a></li>
-						<li><a href="#cleveland-cavaliers">Cleveland Cavaliers</a></li>
-						<li><a href="#detroit-pistons">Detroit Pistons</a></li>
-						<li><a href="#indiana-pacers">Indiana Pacers</a></li>
-						<li><a href="#miami-heat">Miami Heat</a></li>
-						<li><a href="#milwaukee-bucks">Milwaukee Bucks</a></li>
-						<li><a href="#new-york-knicks">New York Knicks</a></li>
-						<li><a href="#orlando-magic">Orlando Magic</a></li>
-						<li><a href="#philadelphia-76ers">Philadelphia 76ers</a></li>
-						<li><a href="#toronto-raptors">Toronto Raptors</a></li>
-						<li><a href="#washington-wizards">Washington Wizards</a></li> -->
-
 					</ul>
 				</li>
 
@@ -129,16 +112,11 @@
 
 				<li class="dropdown">
 
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">NBA Rumors</a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Standings</a>
 
 					<ul class="dropdown-menu">
-
-						<li><a href="#">Page 1-1</a></li>
-
-						<li><a href="#">Page 1-2</a></li>
-
-						<li><a href="#">Page 1-3</a></li>
-
+						<li><a href="#standings/east">Eastern Conference</a></li>
+						<li><a href="#standings/west">Western Conference</a></li>
 					</ul>
 
 				</li>
