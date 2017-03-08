@@ -132,6 +132,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/TradeDeadlineBreakdownArticle.html'
 	})
 
+	.when('/nba-redraft', {
+		templateUrl : 'articles/nba-redraft.html'
+	})
+
 	.when('/team/:teamID', {
 		templateUrl : 'views/team-page.html',
 		controller: 'TeamController'

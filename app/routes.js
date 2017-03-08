@@ -15,7 +15,7 @@ module.exports = function(app) {
 		AppUtil.refreshTeams();
 		AppUtil.refreshPlayers();
 
-		return res.sendStatus(200);
+		return res.sendStatus(200).send("Data has been updated.");
 	});
 
 	app.post('/nbaAPI/saveTeams', function(req, response){
