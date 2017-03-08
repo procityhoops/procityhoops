@@ -145,6 +145,7 @@ var savePlayers = function () {
 				player.name = playerObj.player_name,
 				player.college = playerObj.college,
 				player.height = playerObj.player_height,
+				player.height_inches = playerObj.player_height_inches,
 				player.weight = playerObj.player_weight,
 				player.age = playerObj.age,
 				player.pointsPerGame = playerObj.pts,

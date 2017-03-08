@@ -18,6 +18,7 @@ var playerSchema = new mongoose.Schema({
 	name: String,
 	college: String,
 	height: String,
+	height_inches: Number,
 	weight: Number,
 	age: Number,
 	pointsPerGame: Number,

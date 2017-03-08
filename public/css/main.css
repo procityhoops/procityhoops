@@ -65,3 +65,14 @@ table td {
 .playoff-line {
 	border-bottom: 1.5px solid black;
 }
+
+.sortable th {
+	cursor: pointer;
+}
+
+.sortorder:after {
+	content: '\25b2';
+}
+.sortorder.reverse:after {
+	content: '\25bc';
+}

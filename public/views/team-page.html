@@ -3,19 +3,43 @@
 		<h3>{{currentTeam}}</h3>
 		<table class="table table-hover">
 			<thead>
-				<tr>
-					<th>Name</th>
-					<th>College</th>
-					<th>Height</th>
-					<th>Weight</th>
-					<th>Age</th>
-					<th>Points</th>
-					<th>Reb</th>
-					<th>Ast</th>
+				<tr class="sortable">
+					<th ng-click="sortBy('name')">
+						Name
+						<span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('college')">
+						College
+						<span class="sortorder" ng-show="propertyName === 'college'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('height_inches')">
+						Height
+						<span class="sortorder" ng-show="propertyName === 'height_inches'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('weight')">
+						Weight
+						<span class="sortorder" ng-show="propertyName === 'weight'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('age')">
+						Age
+						<span class="sortorder" ng-show="propertyName === 'age'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('pointsPerGame')">
+						Points
+						<span class="sortorder" ng-show="propertyName === 'pointsPerGame'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('reboundsPerGame')">
+						Reb
+						<span class="sortorder" ng-show="propertyName === 'reboundsPerGame'" ng-class="{reverse: reverse}"></span>
+					</th>
+					<th ng-click="sortBy('assistsPerGame')">
+						Ast
+						<span class="sortorder" ng-show="propertyName === 'assistsPerGame'" ng-class="{reverse: reverse}"></span>
+					</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="player in players">
+				<tr ng-repeat="player in players | orderBy:propertyName:reverse">
 					<td>{{player.name}}</td>
 					<td>{{player.college}}</td>
 					<td>{{player.height}}</td>

@@ -48,4 +48,12 @@ angular.module('TeamCtrl', []).controller('TeamController', function($scope, $ro
 
 		isScopeLoaded();
 	});
+
+	$scope.propertyName = 'name';
+	$scope.reverse = false;
+
+	$scope.sortBy = function(propertyName) {
+		$scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
+		$scope.propertyName = propertyName;
+	};
 });
