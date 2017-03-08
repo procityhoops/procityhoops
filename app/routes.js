@@ -60,6 +60,28 @@ module.exports = function(app) {
 		});
 	});
 
+	app.get('/api/leagueLeaders/:category', function(req, res) {
+		var query = Player.find({});
+
+		if (req.params.category === 'pointsPerGame') {
+			query.sort({'pointsPerGame': 'desc'});
+		} else if (req.params.category === 'reboundsPerGame') {
+			query.sort({'reboundsPerGame': 'desc'});
+		} else if (req.params.category === 'assistsPerGame') {
+			query.sort({'assistsPerGame': 'desc'});
+		} else if (req.params.category === 'netRating') {
+			query.sort({'netRating': 'desc'});
+		}
+
+		query.limit(15);
+		query.exec((err, players) => {
+			if (err) {
+				throw err;
+			}
+			return res.status(200).send(players);
+		});
+	});
+
 	app.get('/nbaAPI/leagueleaders', function (req, response) {
 		nba.stats.leagueLeaders({
 			LeagueID: '00',

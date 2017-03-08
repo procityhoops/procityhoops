@@ -142,6 +142,7 @@ var savePlayers = function () {
 			players.forEach(function(playerObj){
 				var player = new Player();
 				player.teamId = playerObj.team_id,
+				player.team_abbreviation = playerObj.team_abbreviation,
 				player.name = playerObj.player_name,
 				player.college = playerObj.college,
 				player.height = playerObj.player_height,
@@ -151,6 +152,7 @@ var savePlayers = function () {
 				player.pointsPerGame = playerObj.pts,
 				player.reboundsPerGame = playerObj.reb,
 				player.assistsPerGame = playerObj.ast,
+				player.netRating = playerObj.net_rating,
 				player.save(function(err, player) {	if (err){return err;} });
 			});
 
