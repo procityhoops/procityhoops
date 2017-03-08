@@ -5,7 +5,6 @@ var Game = mongoose.model('Game');
 var AppUtil = require('./util');
 
 module.exports = function(app) {
-	const nba = require('nba.js').default;
 	// server routes ===========================================================
 	// handle things like api calls
 	// authentication routes
@@ -81,23 +80,6 @@ module.exports = function(app) {
 			return res.status(200).send(players);
 		});
 	});
-
-	app.get('/nbaAPI/leagueleaders', function (req, response) {
-		nba.stats.leagueLeaders({
-			LeagueID: '00',
-			Season: '2016-17',
-			perMode: 'PerGame',
-			seasonType: 'Regular Season',
-			scope: 'RS',
-			statCategory: 'pts'
-		}).then(function(res) {
-			response.send(res)
-		}).catch(function(err) {
-			console.error(err);
-		});
-	});
-
-	
 
 	// frontend routes =========================================================
 	// route to handle all angular requests
