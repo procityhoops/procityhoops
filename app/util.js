@@ -79,7 +79,6 @@ var saveTeams = function () {
 		nba.data.teams({
 			year: 2016
 		}).then(function(res) {
-
 			Team.remove(function(err,removed) {
 				console.log("Removed " + removed + " teams.");
 
@@ -100,6 +99,7 @@ var saveTeams = function () {
 						var team = new Team();
 						team.teamId = obj.teamId;
 						team.name = obj.fullName;
+						team.nickname = obj.nickname;
 						team.conference = obj.confName;
 						team.win = teamStandings.win;
 						team.loss = teamStandings.loss;
@@ -142,14 +142,17 @@ var savePlayers = function () {
 			players.forEach(function(playerObj){
 				var player = new Player();
 				player.teamId = playerObj.team_id,
+				player.team_abbreviation = playerObj.team_abbreviation,
 				player.name = playerObj.player_name,
 				player.college = playerObj.college,
 				player.height = playerObj.player_height,
+				player.height_inches = playerObj.player_height_inches,
 				player.weight = playerObj.player_weight,
 				player.age = playerObj.age,
 				player.pointsPerGame = playerObj.pts,
 				player.reboundsPerGame = playerObj.reb,
 				player.assistsPerGame = playerObj.ast,
+				player.netRating = playerObj.net_rating,
 				player.save(function(err, player) {	if (err){return err;} });
 			});
 

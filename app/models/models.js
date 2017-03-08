@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 var teamSchema = new mongoose.Schema({
 	teamId: Number,
 	name: String,
+	nickname: String,
 	conference: String,
 	win: Number,
 	loss: Number,
@@ -14,14 +15,17 @@ var teamSchema = new mongoose.Schema({
 
 var playerSchema = new mongoose.Schema({
 	teamId: Number,
+	team_abbreviation: String,
 	name: String,
 	college: String,
 	height: String,
+	height_inches: Number,
 	weight: Number,
 	age: Number,
 	pointsPerGame: Number,
 	reboundsPerGame: Number,
-	assistsPerGame: Number
+	assistsPerGame: Number,
+	netRating: Number
 });
 
 var gameSchema = new mongoose.Schema({
