@@ -1,0 +1,41 @@
+div.cb-grid-img{
+
+}
+
+.monk {
+	float: right;
+	margin-right: 0px;
+	margin-top: 10px;
+}
+
+.redraft {
+	margin-left: 0px;
+	margin-top: -9px
+}
+
+.writing {
+	position: absolute;
+	top: 260px;
+	color: #0000A0;
+	width: 100%;
+	font-size: 35px;
+	left: 1000px;
+}
+
+.writing1 {
+	position: absolute;
+	top: 260px;
+	color: #0000A0;
+	width: 100%;
+	font-size: 35px;
+	left: 275px;
+}
+
+.writing2 {
+	position: absolute;
+	top: 600px;
+	color: #0000A0;
+	width: 100%;
+	font-size: 35px;
+	left: 220px;
+}
