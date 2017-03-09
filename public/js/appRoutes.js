@@ -16,11 +16,11 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/nba-redraft.html'
 	})
 
-		.when('/monk-vs-fox', {
+	.when('/monk-vs-fox', {
 		templateUrl : 'articles/monk-vs-fox.html'
 	})
 
-		.when('/featured-articles', {
+	.when('/featured-articles', {
 		templateUrl : 'featured-articles.html'
 	})
 
