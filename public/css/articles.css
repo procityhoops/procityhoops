@@ -1,41 +1,62 @@
 div.cb-grid-img{
-
+	filter: brightness(65%);
 }
 
 .monk {
 	float: right;
-	margin-right: 0px;
-	margin-top: 10px;
+	width: 730;
+	height: 300;
 }
 
 .redraft {
-	margin-left: 0px;
-	margin-top: -9px
+	width: 730;
+	height: 300;
+	margin-top: -19px;
+}
+
+.trade {
+	float: right;
+	width: 730;
+	height: 300;
+}
+
+.westbrook {
+	width: 730;
+	height: 300;
 }
 
 .writing {
 	position: absolute;
 	top: 260px;
-	color: #0000A0;
-	width: 100%;
-	font-size: 35px;
-	left: 1000px;
+	color: #ffffff;
+	font-size: 45px;
+	left: 885px;
+	font-weight: 900;
 }
 
 .writing1 {
 	position: absolute;
 	top: 260px;
-	color: #0000A0;
-	width: 100%;
-	font-size: 35px;
-	left: 275px;
+	color: #ffffff;
+	font-size: 45px;
+	left: 240px;
+	font-weight: 900;
 }
 
 .writing2 {
 	position: absolute;
-	top: 600px;
-	color: #0000A0;
-	width: 100%;
-	font-size: 35px;
-	left: 220px;
+	top: 565px;
+	color: #ffffff;
+	font-size: 45px;
+	left: 885px;
+	font-weight: 900;
+}
+
+.writing3 {
+	position: absolute;
+	top: 575px;
+	color: #ffffff;
+	font-size: 45px;
+	left: 200px;
+	font-weight: 900;
 }

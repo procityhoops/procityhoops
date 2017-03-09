@@ -20,6 +20,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/monk-vs-fox.html'
 	})
 
+		.when('/westbrook-harden', {
+		templateUrl : 'articles/westbrook-harden.html'
+	})
+
 		.when('/featured-articles', {
 		templateUrl : 'featured-articles.html'
 	})
