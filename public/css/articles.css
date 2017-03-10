@@ -1,62 +1,25 @@
-div.cb-grid-img{
+.featured-articles img {
+	width: 100%;
+	height: 300;
 	filter: brightness(65%);
 }
 
-.monk {
-	float: right;
-	width: 730;
-	height: 300;
+.image { 
+	position: relative; 
+	width: 100%; /* for IE 6 */
 }
 
-.redraft {
-	width: 730;
-	height: 300;
-	margin-top: -19px;
-}
-
-.trade {
-	float: right;
-	width: 730;
-	height: 300;
-}
-
-.westbrook {
-	width: 730;
-	height: 300;
-}
-
-.writing {
-	position: absolute;
-	top: 260px;
+.featured-articles span { 
+	position: absolute; 
+	top: 28vh; 
+	left: 0; 
+	width: 100%; 
 	color: #ffffff;
-	font-size: 45px;
-	left: 885px;
-	font-weight: 900;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 6vmin;
 }
 
-.writing1 {
-	position: absolute;
-	top: 260px;
-	color: #ffffff;
-	font-size: 45px;
-	left: 240px;
-	font-weight: 900;
-}
-
-.writing2 {
-	position: absolute;
-	top: 565px;
-	color: #ffffff;
-	font-size: 45px;
-	left: 885px;
-	font-weight: 900;
-}
-
-.writing3 {
-	position: absolute;
-	top: 575px;
-	color: #ffffff;
-	font-size: 45px;
-	left: 200px;
-	font-weight: 900;
+.top-buffer { 
+	margin-top:20px; 
 }
