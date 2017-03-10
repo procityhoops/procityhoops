@@ -26,6 +26,10 @@ body {
 	margin-top: 0;
 }
 
+.nav li {
+	cursor: pointer;
+}
+
 body {
   background: url(http://i43.tinypic.com/vewt4k.png);
 }
