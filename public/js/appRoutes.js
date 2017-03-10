@@ -8,6 +8,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		controller: 'HomeController'
 	})
 
+	.when('/eastern-conference', {
+		templateUrl : 'eastern-conference.html'
+	})
+
 	.when('/trade-deadline-breakdown', {
 		templateUrl : 'articles/TradeDeadlineBreakdownArticle.html'
 	})
@@ -39,6 +43,26 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		.when('/ball-vs-fultz', {
 		templateUrl : 'articles/ball-vs-fultz.html'
 	})		
+
+		.when('/contender-pretender', {
+		templateUrl : 'articles/contender-pretender.html'
+	})	
+
+		.when('/mn-vs-phi', {
+		templateUrl : 'articles/mn-vs-phi.html'
+	})	
+
+		.when('/nba-mock-draft', {
+		templateUrl : 'articles/nba-mock-draft.html'
+	})	
+
+		.when('/nba-super-team', {
+		templateUrl : 'articles/nba-super-team.html'
+	})	
+
+		.when('/drew-hanlen', {
+		templateUrl : 'articles/drew-hanlen.html'
+	})	
 
 		.when('/featured-articles', {
 		templateUrl : 'featured-articles.html'
