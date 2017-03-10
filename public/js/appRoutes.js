@@ -24,6 +24,11 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/westbrook-harden.html'
 	})
 
+		.when('/rockets-review', {
+		templateUrl : 'articles/rockets-review.html'
+	})
+
+
 		.when('/featured-articles', {
 		templateUrl : 'featured-articles.html'
 	})
