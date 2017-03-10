@@ -28,6 +28,17 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/rockets-review.html'
 	})
 
+		.when('/nba-winners-losers', {
+		templateUrl : 'articles/nba-winners-losers.html'
+	})
+
+		.when('/rookies-new-teams', {
+		templateUrl : 'articles/rookies-new-teams.html'
+	})		
+
+		.when('/ball-vs-fultz', {
+		templateUrl : 'articles/ball-vs-fultz.html'
+	})		
 
 		.when('/featured-articles', {
 		templateUrl : 'featured-articles.html'

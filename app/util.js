@@ -186,7 +186,7 @@ module.exports = {
 			}
 			
 			var now = moment(new Date());
-			if (proCityHoops.length === 0 || now.diff(proCityHoops[0].lastUpdated, 'hours') >= 12)
+			if (proCityHoops.length === 0 || now.diff(proCityHoops[0].lastUpdated, 'hours') >= 4)
 			{
 				console.log("update everything!")
 				saveGames();

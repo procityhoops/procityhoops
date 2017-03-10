@@ -20,6 +20,17 @@
 	font-size: 35px;
 }
 
+.featured-articles span1 { 
+	position: absolute; 
+	top: 250px; 
+	left: 0; 
+	width: 100%; 
+	color: #ffffff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
 .top-buffer { 
 	margin-top:20px; 
 }
