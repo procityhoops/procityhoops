@@ -31,6 +31,7 @@
 	<link href="/css/banner.css" rel="stylesheet">
 	<link href="/css/articles.css" rel="stylesheet">
 	<link href="/css/eastern-conference.css" rel="stylesheet">
+	<link href="/css/western-conference.css" rel="stylesheet">
 </head>
 
 <body ng-controller="IndexController">
@@ -55,7 +56,7 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">Western Conference</a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#western-conference">Western Conference</a>
 					<ul class="dropdown-menu">
 						<li ng-repeat="team in teams | filter:{conference:'West'}">
 							<a href="#team/{{team.teamId}}">{{team.name}}</a>
