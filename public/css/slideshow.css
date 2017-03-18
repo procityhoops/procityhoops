@@ -80,3 +80,40 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.slideshow-container img {
+  width: 100%;
+  height: 375;
+  filter: brightness(60%);
+}
+
+.image { 
+  position: relative; 
+  width: 100%; /* for IE 6 */
+}
+
+.slideshow-container span { 
+  position: absolute; 
+  top: 175px; 
+  left: 0; 
+  width: 100%; 
+  color: #ffffff;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.slideshow-container span1 { 
+  position: absolute; 
+  top: 275px; 
+  left: 0; 
+  width: 100%; 
+  color: #ffffff;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.top-buffer { 
+  margin-top:20px; 
+}
