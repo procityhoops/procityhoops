@@ -80,3 +80,39 @@ table td {
 .sortorder.reverse:after {
 	content: '\25bc';
 }
+
+article {
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+	body{
+		color: pink;
+	}
+	.western-conference .image img {
+	    height: 125px;
+		width: 125px;
+	}
+	article {
+		font-size: 16px;
+	}
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+	body {
+		color: black;
+	}
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+	
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+}
