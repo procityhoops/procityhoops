@@ -28,6 +28,14 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/monk-vs-fox.html'
 	})
 
+	.when('/resting-nba-stars', {
+		templateUrl : 'articles/resting-nba-stars.html'
+	})
+
+	.when('/top-young-players', {
+		templateUrl : 'articles/top-young-players.html'
+	})
+
 		.when('/westbrook-harden', {
 		templateUrl : 'articles/westbrook-harden.html'
 	})
