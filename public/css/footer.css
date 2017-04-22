@@ -1,29 +1,10 @@
 footer {
 	width: 100%;
-	height: 400px;
-	background: #183951;
+	height: 600;
+	background: #335893;
 	margin-top: 50px;
 }
 
-#foot {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
+footer .text {
+	font-size: 24px;
 }
-
-h2 {
-	font-size: 40px;
-	color: #ffffff;
-}
-
-div.social {
-	float: left;
-	margin-left: 75px;
-	margin-top: 20px;
-}
-
-
-a.social {
-	margin-right: 15px;
-}
-

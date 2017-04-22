@@ -92,11 +92,26 @@ article {
 		color: pink;
 	}
 	.western-conference .image img {
+	    height: 150px;
+		width: 150px;
+	}
+
+	.eastern-conference .image img {
 	    height: 125px;
 		width: 125px;
 	}
+
 	article {
-		font-size: 16px;
+		font-size: 18px;
+	}
+
+	h4 {
+		font-size: 23px;
+	}
+
+	article img {
+		width: 100%;
+		height: 450px;
 	}
 }
 
@@ -115,4 +130,27 @@ article {
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1024px) {
 
+	.western-conference .image img {
+	    height: 225px;
+		width: 225px;
+	}
+
+	.eastern-conference .image img {
+	    height: 225px;
+		width: 225px;
+	}
+
+	article {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 25px;
+	}
+
+	article img {
+		width: 60%;
+		height: 500px;
+		;
+	}
 }
