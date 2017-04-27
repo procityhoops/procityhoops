@@ -3,6 +3,8 @@ var Team = mongoose.model('Team');
 var Player = mongoose.model('Player');
 var Game = mongoose.model('Game');
 var AppUtil = require('./util');
+var logger = require('winston');
+logger.add(logger.transports.File, { filename: 'logs/ProCityHoops-Error.log' });
 
 module.exports = function(app) {
 	// server routes ===========================================================
@@ -14,7 +16,7 @@ module.exports = function(app) {
 		AppUtil.refreshTeams();
 		AppUtil.refreshPlayers();
 
-		return res.sendStatus(200).send("Data has been updated.");
+		return res.sendStatus(200).send();
 	});
 
 	app.post('/nbaAPI/saveTeams', function(req, response){
@@ -32,6 +34,7 @@ module.exports = function(app) {
 	app.get('/api/team', function(req, res) {
 		Team.find(function(err, teams){
 			if(err){
+				logger.log('error', err);
 				return res.status(500).send(err);
 			}
 			return res.status(200).send(teams);
@@ -41,6 +44,7 @@ module.exports = function(app) {
 	app.get('/api/players/:teamId', function(req, res) {
 		Player.find({ teamId: req.params.teamId }, function(err, players){
 			if(err){
+				logger.log('error', err);
 				return res.status(500).send(err);
 			}
 			return res.status(200).send(players);
@@ -53,6 +57,7 @@ module.exports = function(app) {
 			.limit(5)
 			.exec(function(err, games) {
 				if(err){
+					logger.log('error', err);
 					return res.status(500).send(err);
 				}
 				return res.status(200).send(games);
@@ -75,6 +80,7 @@ module.exports = function(app) {
 		query.limit(15);
 		query.exec((err, players) => {
 			if (err) {
+				logger.log('error', err);
 				throw err;
 			}
 			return res.status(200).send(players);
@@ -84,8 +90,14 @@ module.exports = function(app) {
 	// frontend routes =========================================================
 	// route to handle all angular requests
 	app.get('*', function(req, res) {
-		AppUtil.checkData();
-		res.sendfile('./public/index.html');
+		try
+		{
+			AppUtil.checkData();
+			res.sendfile('./public/index.html');
+		}
+		catch (err) {
+			logger.log('error', err);
+		}
 	});
 
 };
