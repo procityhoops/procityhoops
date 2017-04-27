@@ -8,6 +8,5 @@ Future Enhancements
 - Store featured articles in a data structure so they can be formatted automatically.
 
 TODO
-- Add error logging
 - Add google analytics
 - Add JS bundler?
