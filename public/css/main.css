@@ -1,29 +1,9 @@
+li.viewAll {
+	display: none;
+}
+
 .sidebar-nav {
 	padding: 9px 0;
-}
-
-body { 
-	padding-top: 65px; 
-}
-
-.dropdown-menu .sub-menu {
-	left: 100%;
-	position: absolute;
-	top: 0;
-	visibility: hidden;
-	margin-top: -1px;
-}
-
-.dropdown-menu li:hover .sub-menu {
-	visibility: visible;
-}
-
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
-
-.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
-	margin-top: 0;
 }
 
 .nav li {
@@ -88,9 +68,7 @@ article {
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 300px) {
-	body{
-		color: pink;
-	}
+
 	.western-conference .image img {
 	    height: 150px;
 		width: 150px;
@@ -117,9 +95,7 @@ article {
 
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 480px) {
-	body {
-		color: black;
-	}
+
 }
 
 /* TABLETS PORTRAIT */
@@ -129,6 +105,7 @@ article {
 
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1024px) {
+	
 
 	.western-conference .image img {
 	    height: 225px;
@@ -151,6 +128,71 @@ article {
 	article img {
 		width: 60%;
 		height: 500px;
-		;
+	}
+}
+
+/* This media query is strictly so we can collapse the nav before the list
+items begin to take two lines*/
+@media (max-width: 900px) {
+	#social-sidebar {
+		display: none;
+	}
+
+  li.viewAll {
+  	display: block;
+  }
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .navbar-nav .open .dropdown-menu {
+	      position: static;
+	    float: none;
+	    width: auto;
+	    margin-top: 0;
+	    background-color: transparent;
+	    border: 0;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+}
+
+@media (min-width: 900px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+
+	#mainContent {
+		margin-left: 60px;
 	}
 }

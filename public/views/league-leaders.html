@@ -4,7 +4,6 @@
 		<option value="pointsPerGame">Points</option>
 		<option value="reboundsPerGame">Rebounds</option>
 		<option value="assistsPerGame">Assists</option>
-		<option value="netRating">Net Rating</option>
 	</select>
 	<table class="table table-hover">
 		<thead>
@@ -21,7 +20,7 @@
 			<tr ng-repeat="player in players | limitTo: 15">
 				<td>{{player.name}}</td>
 				<td>{{player.team_abbreviation}}</td>
-				<td ng-class="{'bold': category === 'netRating'}">{{player.netRating}}</td>
+				<td>{{player.netRating}}</td>
 				<td ng-class="{'bold': category === 'assistsPerGame'}">{{player.assistsPerGame}}</td>
 				<td ng-class="{'bold': category === 'reboundsPerGame'}">{{player.reboundsPerGame}}</td>
 				<td ng-class="{'bold': category === 'pointsPerGame'}">{{player.pointsPerGame}}</td>

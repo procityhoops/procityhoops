@@ -3,6 +3,7 @@
 <head>
 
 	<title>ProCity Hoops</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -24,85 +25,116 @@
 	<script src="/js/slideshow.js"></script>
 	<script src="https://use.fontawesome.com/7eedd9d669.js"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<link href="/css/main.css" rel="stylesheet">
 	<link href="/css/footer.css" rel="stylesheet">
-	<link href="/css/slideshow.css" rel="stylesheet">
 	<link href="/css/banner.css" rel="stylesheet">
 	<link href="/css/articles.css" rel="stylesheet">
 	<link href="/css/eastern-conference.css" rel="stylesheet">
 	<link href="/css/western-conference.css" rel="stylesheet">
+	<script type="text/javascript">
+		$(function() {
+		    $(document).on('click','.navbar-collapse.in',function(e) {
+		    	console.log("here");
+				if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+					$(this).collapse('hide');
+				}
+			});
+
+			$('a.disableLinkMobile').click(function(ev) { 
+				var width = $(window).width();
+				if (width < 900){
+					ev.preventDefault(); 
+				}
+			});
+		});
+		
+	</script>
 </head>
 
 <body ng-controller="IndexController">
-
-	<!-- Top navbar  -->
-	<nav class="navbar navbar-default navbar-fixed-top" >
+	<nav class="navbar navbar-toggleable-md navbar-default">
 		<div class="container-fluid">
-			<a href="#/"><img src="/assets/images/ProCityHoopsIcon.png" style="max-height: 50px;"></a>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-				<li class="active"><a href="#/">Home</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#eastern-conference">Eastern Conference</a>
-					<ul class="dropdown-menu">
-						<li ng-repeat="team in teams | filter:{conference:'East'}">
-							<a href="#team/{{team.teamId}}">{{team.name}}</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#western-conference">Western Conference</a>
-					<ul class="dropdown-menu">
-						<li ng-repeat="team in teams | filter:{conference:'West'}">
-							<a href="#team/{{team.teamId}}">{{team.name}}</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">NBA Stats</a>
-					<ul class="dropdown-menu">
-						<li><a href="#league-leaders">League Leaders</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#featured-articles">Featured Articles</a>
-					<ul class="dropdown-menu">
-						<li><a href="#top-young-players">Top 5 Players under 22 Years Old</a></li>
-						<li><a href="#resting-nba-stars">Resting NBA Stars</a></li>
-						<li><a href="#westbrook-harden">Russell Westbrook vs James Harden</a></li>
-						<li><a href="#rockets-review">Rockets Season Review</a></li>	
-						<li><a href="#nba-redraft">2015 NBA Redraft</a></li>
-						<li><a href="#monk-vs-fox">Malik Monk vs. DeAaron Fox</a></li>
-						<li><a href="#trade-deadline-breakdown">Trade Deadline Breakdown</a></li>
-						<li><a href="#nba-winners-losers">NBA First Half Winners and Losers</a></li>
-						<li><a href="#rookies-new-teams">Rookies That Need New Teams</a></li>
-						<li><a href="#ball-vs-fultz">Lonzo Ball vs Markelle Fultz</a></li>
-						<li><a href="#contender-pretender">NBA Contender or Pretender</a></li>
-						<li><a href="#mn-vs-phi">The Future: MIN or PHI?</a></li>
-						<li><a href="#nba-mock-draft">Early NBA Mock Draft</a></li>
-						<li><a href="#nba-super-team">The NBA's Real "Super" Team</a></li>
-						<li><a href="#drew-hanlen">Drew Hanlen Question and Answer</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">Standings</a>
-					<ul class="dropdown-menu">
-						<li><a href="#standings/east">Eastern Conference</a></li>
-						<li><a href="#standings/west">Western Conference</a></li>
-					</ul>
-				</li>
-			</ul>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a href="#/"><img src="/assets/images/ProCityHoopsIcon.png" style="max-height: 50px;"></a>		
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#/">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle disableLinkMobile" data-toggle="dropdown" href="#eastern-conference">
+							Eastern Conference
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="viewAll"><a href="#eastern-conference">- View All -</a></li>
+							<li ng-repeat="team in teams | filter:{conference:'East'}">
+								<a href="#team/{{team.teamId}}">{{team.name}}</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle disableLinkMobile" data-toggle="dropdown" href="#western-conference">
+							Western Conference
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="viewAll"><a href="#western-conference">- View All -</a></li>
+							<li ng-repeat="team in teams | filter:{conference:'West'}">
+								<a href="#team/{{team.teamId}}">{{team.name}}</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#league-leaders">NBA Stats</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle disableLinkMobile" data-toggle="dropdown" href="#featured-articles">
+							Featured Articles
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="viewAll"><a href="#featured-articles">- View All -</a></li>
+							<li><a href="#top-young-players">Top 5 Players under 22 Years Old</a></li>
+							<li><a href="#resting-nba-stars">Resting NBA Stars</a></li>
+							<li><a href="#westbrook-harden">Russell Westbrook vs James Harden</a></li>
+							<li><a href="#rockets-review">Rockets Season Review</a></li>	
+							<li><a href="#nba-redraft">2015 NBA Redraft</a></li>
+							<li><a href="#monk-vs-fox">Malik Monk vs. DeAaron Fox</a></li>
+							<li><a href="#trade-deadline-breakdown">Trade Deadline Breakdown</a></li>
+							<li><a href="#nba-winners-losers">NBA First Half Winners and Losers</a></li>
+							<li><a href="#rookies-new-teams">Rookies That Need New Teams</a></li>
+							<li><a href="#ball-vs-fultz">Lonzo Ball vs Markelle Fultz</a></li>
+							<li><a href="#contender-pretender">NBA Contender or Pretender</a></li>
+							<li><a href="#mn-vs-phi">The Future: MIN or PHI?</a></li>
+							<li><a href="#nba-mock-draft">Early NBA Mock Draft</a></li>
+							<li><a href="#nba-super-team">The NBA's Real "Super" Team</a></li>
+							<li><a href="#drew-hanlen">Drew Hanlen Question and Answer</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">
+							Standings
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#standings/east">Eastern Conference</a></li>
+							<li><a href="#standings/west">Western Conference</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
 	<!-- Social Media sidebar -->
-	<ul id="social-sidebar" style="padding-left: 10px">
+	<ul id="social-sidebar" class="hidden-xs" style="padding-left: 10px">
 		<li>
 			<a href="https://twitter.com/ProCityHoops" target="_blank">
 				<i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="color: #00aced"></i>
@@ -117,7 +149,7 @@
 	</ul>
 
 	<!-- Content -->
-	<div style="margin-left: 80px;" ng-view autoscroll="true"></div>
+	<div id="mainContent" ng-view autoscroll="true"></div>
 
 	<!-- Footer? -->
 	<footer>

@@ -73,8 +73,6 @@ module.exports = function(app) {
 			query.sort({'reboundsPerGame': 'desc'});
 		} else if (req.params.category === 'assistsPerGame') {
 			query.sort({'assistsPerGame': 'desc'});
-		} else if (req.params.category === 'netRating') {
-			query.sort({'netRating': 'desc'});
 		}
 
 		query.limit(15);
