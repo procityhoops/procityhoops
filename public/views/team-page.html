@@ -1,100 +1,102 @@
-<div class="row" id="team-page-content" style="display: none;">
-	<div id="player-table" class="col-lg-8">
-		<h3>{{currentTeam}}</h3>
-		<table class="table table-hover">
-			<thead>
-				<tr class="sortable">
-					<th ng-click="sortBy('name')">
-						Name
-						<span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('college')">
-						College
-						<span class="sortorder" ng-show="propertyName === 'college'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('height_inches')">
-						Height
-						<span class="sortorder" ng-show="propertyName === 'height_inches'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('weight')">
-						Weight
-						<span class="sortorder" ng-show="propertyName === 'weight'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('age')">
-						Age
-						<span class="sortorder" ng-show="propertyName === 'age'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('pointsPerGame')">
-						Points
-						<span class="sortorder" ng-show="propertyName === 'pointsPerGame'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('reboundsPerGame')">
-						Reb
-						<span class="sortorder" ng-show="propertyName === 'reboundsPerGame'" ng-class="{reverse: reverse}"></span>
-					</th>
-					<th ng-click="sortBy('assistsPerGame')">
-						Ast
-						<span class="sortorder" ng-show="propertyName === 'assistsPerGame'" ng-class="{reverse: reverse}"></span>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="player in players | orderBy:propertyName:reverse">
-					<td>{{player.name}}</td>
-					<td>{{player.college}}</td>
-					<td>{{player.height}}</td>
-					<td>{{player.weight}}</td>
-					<td>{{player.age}}</td>
-					<td>{{player.pointsPerGame}}</td>
-					<td>{{player.reboundsPerGame}}</td>
-					<td>{{player.assistsPerGame}}</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div id="team-info" class="col-lg-4">
-		<h3>Last 5 games</h3>
-		<div id="team-last5-games" class="row">
+<div class="container-fluid">
+	<div class="row" id="team-page-content" style="display: none;">
+		<div id="player-table" class="col-lg-8">
+			<h3>{{currentTeam}}</h3>
 			<table class="table table-hover">
 				<thead>
-					<tr>
-						<th>Matchup</th>
-						<th>Date</th>
-						<th>Score</th>
-						<th>W/L</th>
+					<tr class="sortable">
+						<th ng-click="sortBy('name')">
+							Name
+							<span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('college')">
+							College
+							<span class="sortorder" ng-show="propertyName === 'college'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('height_inches')">
+							Height
+							<span class="sortorder" ng-show="propertyName === 'height_inches'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('weight')">
+							Weight
+							<span class="sortorder" ng-show="propertyName === 'weight'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('age')">
+							Age
+							<span class="sortorder" ng-show="propertyName === 'age'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('pointsPerGame')">
+							Points
+							<span class="sortorder" ng-show="propertyName === 'pointsPerGame'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('reboundsPerGame')">
+							Reb
+							<span class="sortorder" ng-show="propertyName === 'reboundsPerGame'" ng-class="{reverse: reverse}"></span>
+						</th>
+						<th ng-click="sortBy('assistsPerGame')">
+							Ast
+							<span class="sortorder" ng-show="propertyName === 'assistsPerGame'" ng-class="{reverse: reverse}"></span>
+						</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="game in recentGames">
-						<td>{{game.matchup}}</td>
-						<td>{{game.gameDate | date : "M/d/yy"}}</td>
-						<td>{{game.score}}</td>
-						<td ng-class="game.winLoss === 'W' ? 'game-won' : 'game-lost'">{{game.winLoss}}</td>
+					<tr ng-repeat="player in players | orderBy:propertyName:reverse">
+						<td>{{player.name}}</td>
+						<td>{{player.college}}</td>
+						<td>{{player.height}}</td>
+						<td>{{player.weight}}</td>
+						<td>{{player.age}}</td>
+						<td>{{player.pointsPerGame}}</td>
+						<td>{{player.reboundsPerGame}}</td>
+						<td>{{player.assistsPerGame}}</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-		<div class="row">
-			<h3>{{conferenceName}} Standings</h3>
-			<div id="team-last5-games" class="row">
+		<div id="team-info" class="col-lg-4">
+			<h3>Last 5 games</h3>
+			<div id="team-last5-games">
 				<table class="table table-hover">
 					<thead>
 						<tr>
-							<th>Rank</th>
-							<th>Team</th>
+							<th>Matchup</th>
+							<th>Date</th>
+							<th>Score</th>
 							<th>W/L</th>
-							<th>GB</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="team in standings" ng-class="{ 'bold': team.teamId == currentTeamId }">
-							<td width="15%">{{team.conferenceRank}}</td>
-							<td width="50%">{{(teams | filter:{teamId:team.teamId})[0].name}}</td>
-							<td width="15%">{{team.win}} - {{team.loss}}</td>
-							<td with="15%">{{team.conferenceGamesBehind}}</td>
+						<tr ng-repeat="game in recentGames">
+							<td>{{game.matchup}}</td>
+							<td>{{game.gameDate | date : "M/d/yy"}}</td>
+							<td>{{game.score}}</td>
+							<td ng-class="game.winLoss === 'W' ? 'game-won' : 'game-lost'">{{game.winLoss}}</td>
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<div>
+				<h3>{{conferenceName}} Standings</h3>
+				<div id="team-last5-games">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Rank</th>
+								<th>Team</th>
+								<th>W/L</th>
+								<th>GB</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="team in standings" ng-class="{ 'bold': team.teamId == currentTeamId }">
+								<td width="15%">{{team.conferenceRank}}</td>
+								<td width="50%">{{(teams | filter:{teamId:team.teamId})[0].name}}</td>
+								<td width="15%">{{team.win}} - {{team.loss}}</td>
+								<td with="15%">{{team.conferenceGamesBehind}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
