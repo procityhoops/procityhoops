@@ -66,6 +66,55 @@ article {
 	padding-right: 5px;
 }
 
+
+.slideshow-container span1 { 
+	position: absolute; 
+	top: 275px; 
+	left: 0; 
+	width: 100%; 
+	color: #ffffff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.featured-articles img {
+	width: 100%;
+	height: 300;
+	filter: brightness(60%);
+}
+
+.image { 
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+
+.featured-articles span { 
+	position: absolute; 
+	top: 150px; 
+	left: 0; 
+	width: 100%; 
+	color: #ffffff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 35px;
+}
+
+.featured-articles span1 { 
+	position: absolute; 
+	top: 250px; 
+	left: 0; 
+	width: 100%; 
+	color: #ffffff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.top-buffer { 
+	margin-top:20px; 
+}
+
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 300px) {
 
@@ -107,34 +156,32 @@ article {
 	}
 
 	.slideshow-container img {
-  width: 100%;
-  height: 250;
-  filter: brightness(60%);
-}
+		width: 100%;
+		height: 250;
+		filter: brightness(60%);
+	}
 
-.slideshow-container span { 
-  position: absolute; 
-  top: 155px; 
-  left: 0; 
-  width: 100%; 
-  color: #ffffff;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 20px;
-}
+	.slideshow-container span { 
+		position: absolute; 
+		top: 155px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
 
-}
-
-.slideshow-container span1 { 
-  position: absolute; 
-  top: 275px; 
-  left: 0; 
-  width: 100%; 
-  color: #ffffff;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 15px;
-}
+	.slideshow-container span1 { 
+		position: absolute; 
+		top: 275px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 15px;
+	}
 
 }
 
@@ -189,71 +236,21 @@ article {
 	}
 
 	.slideshow-container img {
-  width: 100%;
-  height: 375;
-  filter: brightness(60%);
-}
+		width: 100%;
+		height: 375;
+		filter: brightness(60%);
+	}
 
-.slideshow-container span { 
-  position: absolute; 
-  top: 175px; 
-  left: 0; 
-  width: 100%; 
-  color: #ffffff;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 35px;
-}
-
-}
-
-.slideshow-container span1 { 
-  position: absolute; 
-  top: 275px; 
-  left: 0; 
-  width: 100%; 
-  color: #ffffff;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 15px;
-}
-
-.featured-articles img {
-	width: 100%;
-	height: 300;
-	filter: brightness(60%);
-}
-
-.image { 
-	position: relative; 
-	width: 100%; /* for IE 6 */
-}
-
-.featured-articles span { 
-	position: absolute; 
-	top: 150px; 
-	left: 0; 
-	width: 100%; 
-	color: #ffffff;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 35px;
-}
-
-.featured-articles span1 { 
-	position: absolute; 
-	top: 250px; 
-	left: 0; 
-	width: 100%; 
-	color: #ffffff;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 15px;
-}
-
-.top-buffer { 
-	margin-top:20px; 
-}
+	.slideshow-container span { 
+		position: absolute; 
+		top: 175px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
 
 }
 

@@ -5,12 +5,14 @@
     "angular": "latest",
     "angular-route": "latest",
     "bootstrap": "latest",
-    "nba.js": "^0.3.2"
+    "nba.js": "^0.3.2",
+    "winston": "latest"
   },
   "description": "Pro City Hoops Website",
   "main": "server.js",
   "scripts": {
-    "test": "jo"
+    "test": "jo",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/procityhoops/procityhoops/issues"
   },
-  "homepage": "https://github.com/procityhoops/procityhoops#readme"
+  "homepage": "https://github.com/procityhoops/procityhoops#readme",
+  "devDependencies": {}
 }
