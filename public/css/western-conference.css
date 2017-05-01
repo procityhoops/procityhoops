@@ -1,6 +1,9 @@
 .western-conference img {
 	width: 100%;
 	height: 200;
+
+	display: block; 
+    margin: auto;
 }
 
 .image { 
