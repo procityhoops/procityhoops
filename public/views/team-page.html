@@ -91,7 +91,7 @@
 							<tr ng-repeat="team in standings" ng-class="{ 'bold': team.teamId == currentTeamId }">
 								<td width="15%">{{team.conferenceRank}}</td>
 								<td width="50%">{{(teams | filter:{teamId:team.teamId})[0].name}}</td>
-								<td width="15%">{{team.win}} - {{team.loss}}</td>
+								<td class="nowrap" width="15%">{{team.win}} - {{team.loss}}</td>
 								<td with="15%">{{team.conferenceGamesBehind}}</td>
 							</tr>
 						</tbody>
