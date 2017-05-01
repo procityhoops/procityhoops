@@ -148,11 +148,11 @@ article {
 
 	.banner {
 		width: 100%;
-		height: 125px;
+		height: 145px;
 	}
 
 	p {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.slideshow-container img {
@@ -177,6 +177,31 @@ article {
 		top: 275px; 
 		left: 0; 
 		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 15px;
+	}
+
+	.featured-articles img {
+		width: 100%;
+		height: 225px;
+	}
+
+	.featured-articles span {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.featured-articles span1 {
+		position: absolute;
+		top: 175px;
+		left: 0;
 		color: #ffffff;
 		text-align: center;
 		font-weight: bolder;
@@ -243,13 +268,48 @@ article {
 
 	.slideshow-container span { 
 		position: absolute; 
-		top: 175px; 
+		top: 240px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
 		text-align: center;
 		font-weight: bolder;
 		font-size: 35px;
+	}
+
+	.slideshow-container span1 { 
+		position: absolute; 
+		top: 400px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.featured-articles img {
+		height: 350px;
+	}
+
+	.featured-articles span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.featured-articles span1 {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
 	}
 
 }
