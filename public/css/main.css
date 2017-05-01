@@ -1,3 +1,8 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 li.viewAll {
 	display: none;
 }
@@ -11,7 +16,8 @@ li.viewAll {
 }
 
 body {
-  background: url(http://i43.tinypic.com/vewt4k.png);
+	background: url(http://i43.tinypic.com/vewt4k.png);
+	margin-bottom: 60px;
 }
 
 footer {
@@ -19,6 +25,8 @@ footer {
 	background: #335893;
 	font-size: 2vw;
 	text-align: center;
+	position: absolute;
+	bottom: 0;
 }
 
 footer a:hover {
@@ -142,12 +150,6 @@ article {
 	    height: 80px;
 		width: 80px;
 	}
-
-	.container-fluid {
-		padding-right: 5px;
-		padding-left: 5px;
-	}
-
 	article p{
 		font-size: 18px;
 	}
@@ -240,10 +242,7 @@ article {
 
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 768px) {
-	.container-fluid {
-		padding-right: 10px;
-		padding-left: 10px;
-	}
+
 	.banner {
 		width: 100%;
 		height: 250px;

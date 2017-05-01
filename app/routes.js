@@ -90,7 +90,10 @@ module.exports = function(app) {
 	app.get('*', function(req, res) {
 		try
 		{
-			AppUtil.checkData();
+			//Need to figure out better way of updating data. Since it is the offseason,
+			//we have some time. 
+			//Bug: Getting duplicate team/players when updating data.
+			//AppUtil.checkData();
 			res.sendfile('./public/index.html');
 		}
 		catch (err) {
