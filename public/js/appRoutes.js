@@ -24,6 +24,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/nba-redraft.html'
 	})
 
+	.when('/last-straw', {
+		templateUrl : 'articles/last-straw.html'
+	})
+
 	.when('/monk-vs-fox', {
 		templateUrl : 'articles/monk-vs-fox.html'
 	})
