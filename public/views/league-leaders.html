@@ -1,11 +1,25 @@
 <div class="content-fluid">
 	<div id="league-leaders-table" style="display: none;">
-		<label for="category">Category: </label>
-		<select id="category" class="form-control" onChange="updateCategory()" style="width: 125px; display: inline;">
-			<option value="pointsPerGame">Points</option>
-			<option value="reboundsPerGame">Rebounds</option>
-			<option value="assistsPerGame">Assists</option>
-		</select>
+	
+			<div class="form-group">
+				<label for="category">Category: </label>
+				<select id="category" class="form-control" onChange="updateLeagueLeaders()" style="width: 125px; display: inline;">
+					<option value="pointsPerGame">Points</option>
+					<option value="reboundsPerGame">Rebounds</option>
+					<option value="assistsPerGame">Assists</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="limit">Results: </label>
+				<select id="limit" class="form-control" onChange="updateLeagueLeaders()" style="width: 125px; display: inline;">
+					<option value="10">10</option>
+					<option value="15" selected>15</option>
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+				</select>
+			</div>
+	
 		<table class="table table-hover">
 			<thead>
 				<tr>
@@ -18,7 +32,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="player in players | limitTo: 15">
+				<tr ng-repeat="player in players">
 					<td>{{player.name}}</td>
 					<td>{{player.team_abbreviation}}</td>
 					<td>{{player.netRating}}</td>

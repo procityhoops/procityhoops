@@ -64,7 +64,7 @@ module.exports = function(app) {
 		});
 	});
 
-	app.get('/api/leagueLeaders/:category', function(req, res) {
+	app.get('/api/leagueLeaders/:category/:limit', function(req, res) {
 		var query = Player.find({});
 
 		if (req.params.category === 'pointsPerGame') {
@@ -75,7 +75,7 @@ module.exports = function(app) {
 			query.sort({'assistsPerGame': 'desc'});
 		}
 
-		query.limit(15);
+		query.limit(parseInt(req.params.limit));
 		query.exec((err, players) => {
 			if (err) {
 				logger.log('error', err);
