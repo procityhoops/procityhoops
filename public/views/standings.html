@@ -1,9 +1,14 @@
-<h3>{{conference}} Conference Standings</h3>
+<label for="conference">Conference: </label>
+<select id="conference" class="form-control" onChange="updateConference()" style="width: 125px; display: inline;">
+	<option value="west">West</option>
+	<option value="east">East</option>
+</select>
+
 <table class="table table-hover">
 	<thead>
 		<tr>
 			<th></th>
-			<th></th>
+			<th>Team</th>
 			<th>Win</th>
 			<th>Loss</th>
 			<th>Pct</th>

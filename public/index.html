@@ -119,21 +119,14 @@
 							<li><a href="#drew-hanlen">Drew Hanlen Question and Answer</a></li>
 						</ul>
 					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown">
-							Standings
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#standings/east">Eastern Conference</a></li>
-							<li><a href="#standings/west">Western Conference</a></li>
-						</ul>
+					<li>
+						<a href="#standings/west">Standings</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="container">
+	<div class="container-fluid">
 		<!-- Social Media sidebar -->
 		<ul id="social-sidebar" class="hidden-xs" style="padding-left: 10px">
 			<li>
@@ -151,18 +144,17 @@
 
 		<!-- Content -->
 		<div id="mainContent" ng-view autoscroll="true"></div>
-
-		<!-- Footer? -->
-		<footer class="footer">
-			<div>
-				<a href="#/">Home</a> | 
-				<a href="#eastern-conference">Eastern Conference</a> | 
-				<a href="#western-conference">Western Conference</a> | 
-				<a href="#league-leaders">NBA Stats</a> | 
-				<a href="#featured-articles">Featured Articles</a> | 
-				<a href="#standings/east">Standings</a>
-			</div>
-		</footer>
 	</div>
+		<!-- Footer? -->
+	<footer class="footer">
+		<div class="hidden-sm hidden-xs">
+			<a href="#/">Home</a> | 
+			<a href="#eastern-conference">Eastern Conference</a> | 
+			<a href="#western-conference">Western Conference</a> | 
+			<a href="#league-leaders">NBA Stats</a> | 
+			<a href="#featured-articles">Featured Articles</a> | 
+			<a href="#standings/east">Standings</a>
+		</div>
+	</footer>
 </body>
 </html>
