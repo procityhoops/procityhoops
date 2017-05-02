@@ -30,6 +30,11 @@ footer {
 	bottom: 0;
 }
 
+
+footer a {
+	color: black;
+}
+
 footer a:hover {
 	color: white;
 }
@@ -160,7 +165,7 @@ article {
 		width: 80px;
 	}
 	article p{
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	h4 {
@@ -276,8 +281,8 @@ article {
 		width: 225px;
 	}
 
-	article {
-		font-size: 20px;
+	article p{
+		font-size: 18px;
 	}
 
 	h4 {
