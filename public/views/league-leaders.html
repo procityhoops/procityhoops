@@ -1,30 +1,32 @@
-<div id="league-leaders-table" style="display: none;">
-	<label for="category">Category: </label>
-	<select id="category" class="form-control" onChange="updateCategory()" style="width: 125px; display: inline;">
-		<option value="pointsPerGame">Points</option>
-		<option value="reboundsPerGame">Rebounds</option>
-		<option value="assistsPerGame">Assists</option>
-	</select>
-	<table class="table table-hover">
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Team</th>
-				<th>Net Rating</th>
-				<th>Assists/game</th>
-				<th>Rbs/game</th>
-				<th>Pts/game</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat="player in players | limitTo: 15">
-				<td>{{player.name}}</td>
-				<td>{{player.team_abbreviation}}</td>
-				<td>{{player.netRating}}</td>
-				<td ng-class="{'bold': category === 'assistsPerGame'}">{{player.assistsPerGame}}</td>
-				<td ng-class="{'bold': category === 'reboundsPerGame'}">{{player.reboundsPerGame}}</td>
-				<td ng-class="{'bold': category === 'pointsPerGame'}">{{player.pointsPerGame}}</td>
-			</tr>
-		</tbody>
-	</table>
+<div class="content-fluid">
+	<div id="league-leaders-table" style="display: none;">
+		<label for="category">Category: </label>
+		<select id="category" class="form-control" onChange="updateCategory()" style="width: 125px; display: inline;">
+			<option value="pointsPerGame">Points</option>
+			<option value="reboundsPerGame">Rebounds</option>
+			<option value="assistsPerGame">Assists</option>
+		</select>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Team</th>
+					<th>Net Rating</th>
+					<th>Assists/game</th>
+					<th>Rbs/game</th>
+					<th>Pts/game</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="player in players | limitTo: 15">
+					<td>{{player.name}}</td>
+					<td>{{player.team_abbreviation}}</td>
+					<td>{{player.netRating}}</td>
+					<td ng-class="{'bold': category === 'assistsPerGame'}">{{player.assistsPerGame}}</td>
+					<td ng-class="{'bold': category === 'reboundsPerGame'}">{{player.reboundsPerGame}}</td>
+					<td ng-class="{'bold': category === 'pointsPerGame'}">{{player.pointsPerGame}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
