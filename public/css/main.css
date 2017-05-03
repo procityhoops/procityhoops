@@ -160,10 +160,19 @@ article {
 		width: 80px;
 	}
 
+	.western-conference h1 {
+		font-size: 30px;
+	}
+
 	.eastern-conference .image img {
 	    height: 80px;
 		width: 80px;
 	}
+
+	.eastern-conference h1 {
+		font-size: 30px;
+	}
+
 	article p{
 		font-size: 14px;
 	}
@@ -261,6 +270,49 @@ article {
 		width: 100%;
 		height: 250px;
 	}
+
+	.western-conference .image img {
+	    height: 135px;
+		width: 135px;
+	}
+
+	.western-conference h1 {
+		font-size: 36px;
+	}
+
+	.eastern-conference .image img {
+	    height: 135px;
+		width: 135px;
+	}
+
+	.eastern-conference h1 {
+		font-size: 36px;
+	}
+
+	.featured-articles img {
+		height: 350px;
+	}
+
+	.featured-articles span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.featured-articles span1 {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
@@ -276,9 +328,17 @@ article {
 		width: 225px;
 	}
 
+	.western-conference h1 {
+		font-size: 40px;
+	}
+
 	.eastern-conference .image img {
 	    height: 225px;
 		width: 225px;
+	}
+
+	.eastern-conference h1 {
+		font-size: 40px;
 	}
 
 	article p{
@@ -354,6 +414,7 @@ article {
 		font-weight: bolder;
 		font-size: 20px;
 	}
+
 	footer {
 		height: 75px;
 		margin-top: 25px;
