@@ -36,16 +36,8 @@
 	<script type="text/javascript">
 		$(function() {
 		    $(document).on('click','.navbar-collapse.in',function(e) {
-		    	console.log("here");
 				if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
 					$(this).collapse('hide');
-				}
-			});
-
-			$('a.disableLinkMobile').click(function(ev) { 
-				var width = $(window).width();
-				if (width < 900){
-					ev.preventDefault(); 
 				}
 			});
 		});
@@ -68,7 +60,7 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#/">Home</a></li>
 					<li class="dropdown">
-						<a class="dropdown-toggle disableLinkMobile" data-toggle="dropdown" href="#eastern-conference">
+						<a class="dropdown-toggle" data-toggle="dropdown">
 							Eastern Conference
 							<span class="caret"></span>
 						</a>
@@ -80,7 +72,7 @@
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a class="dropdown-toggle disableLinkMobile" data-toggle="dropdown" href="#western-conference">
+						<a class="dropdown-toggle" data-toggle="dropdown">
 							Western Conference
 							<span class="caret"></span>
 						</a>
@@ -95,7 +87,7 @@
 						<a href="#league-leaders">NBA Stats</a>
 					</li>
 					<li class="dropdown">
-						<a class="dropdown-toggle disableLinkMobile" data-toggle="dropdown" href="#featured-articles">
+						<a class="dropdown-toggle" data-toggle="dropdown">
 							Featured Articles
 							<span class="caret"></span>
 						</a>
