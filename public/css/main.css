@@ -3,10 +3,6 @@ html {
 	min-height: 100%;
 }
 
-li.viewAll {
-	display: none;
-}
-
 .sidebar-nav {
 	padding: 9px 0;
 }
@@ -150,6 +146,10 @@ article {
 
 .top-buffer { 
 	margin-top:20px; 
+}
+
+.navbar-fixed-top .navbar-collapse {
+	max-height: 450px;
 }
 
 /* SMARTPHONES PORTRAIT */
@@ -358,6 +358,10 @@ article {
 		height: 75px;
 		margin-top: 25px;
 	}
+
+	body{
+		margin-bottom: 80px;
+	}
 }
 
 /* This media query is strictly so we can collapse the nav before the list
@@ -366,10 +370,6 @@ items begin to take two lines*/
 	#social-sidebar {
 		display: none;
 	}
-
-  li.viewAll {
-  	display: block;
-  }
   .navbar-header {
       float: none;
   }

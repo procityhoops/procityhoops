@@ -73,7 +73,7 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li class="viewAll"><a href="#eastern-conference">- View All -</a></li>
+							<li><a href="#eastern-conference">- View All -</a></li>
 							<li ng-repeat="team in teams | filter:{conference:'East'}">
 								<a href="#team/{{team.teamId}}">{{team.name}}</a>
 							</li>
@@ -85,7 +85,7 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li class="viewAll"><a href="#western-conference">- View All -</a></li>
+							<li><a href="#western-conference">- View All -</a></li>
 							<li ng-repeat="team in teams | filter:{conference:'West'}">
 								<a href="#team/{{team.teamId}}">{{team.name}}</a>
 							</li>
@@ -100,7 +100,7 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li class="viewAll"><a href="#featured-articles">- View All -</a></li>
+							<li><a href="#featured-articles">- View All -</a></li>
 							<li><a href="#last-straw">The Last Straw</a></li>
 							<li><a href="#top-young-players">Top 5 Players under 22 Years Old</a></li>
 							<li><a href="#resting-nba-stars">Resting NBA Stars</a></li>
@@ -118,7 +118,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container-fluid">
+	<div class="container-fluid" style="overflow-x: scroll;">
 		<!-- Social Media sidebar -->
 		<ul id="social-sidebar" class="hidden-xs" style="padding-left: 10px">
 			<li>
