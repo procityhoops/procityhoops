@@ -96,7 +96,7 @@ article {
 }
 
 
-.slideshow-container span1 { 
+.slideshow-container .articleDate { 
 	position: absolute; 
 	top: 275px; 
 	left: 0; 
@@ -133,7 +133,7 @@ article {
 	font-size: 35px;
 }
 
-.featured-articles span1 { 
+.featured-articles .articleDate { 
 	position: absolute; 
 	top: 250px; 
 	left: 0; 
@@ -221,7 +221,7 @@ article {
 		font-size: 25px;
 	}
 
-	.slideshow-container span1 { 
+	.slideshow-container .articleDate { 
 		position: absolute; 
 		top: 275px; 
 		left: 0; 
@@ -250,7 +250,7 @@ article {
 		font-size: 20px;
 	}
 
-	.featured-articles span1 {
+	.featured-articles .articleDate {
 		position: absolute;
 		top: 175px;
 		left: 0;
@@ -307,7 +307,7 @@ article {
 		font-size: 35px;
 	}
 
-	.featured-articles span1 {
+	.featured-articles .articleDate {
 		position: absolute;
 		top: 280px;
 		left: 0;
@@ -388,7 +388,7 @@ article {
 		font-size: 35px;
 	}
 
-	.slideshow-container span1 { 
+	.slideshow-container .articleDate { 
 		position: absolute; 
 		top: 400px; 
 		left: 0; 
@@ -413,7 +413,7 @@ article {
 		font-size: 35px;
 	}
 
-	.featured-articles span1 {
+	.featured-articles .articleDate {
 		position: absolute;
 		top: 280px;
 		left: 0;
