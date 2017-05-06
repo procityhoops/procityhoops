@@ -269,10 +269,17 @@ article {
 
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 768px) {
-
+	#myNavbar {
+		overflow-y: auto !important;
+	}
 	.banner {
 		width: 100%;
 		height: 250px;
+	}
+
+	.navbar .container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 
 	.western-conference .image img {
@@ -461,7 +468,6 @@ items begin to take two lines*/
   }
   .navbar-nav {
       float: none!important;
-      margin-top: 7.5px;
   }
   .navbar-nav>li {
       float: none;
@@ -486,6 +492,10 @@ items begin to take two lines*/
 }
 
 @media (min-width: 900px) {
+	#myNavbar {
+		overflow-y: visible !important;
+	}
+
 	.dropdown:hover .dropdown-menu {
 		display: block;
 	}
