@@ -212,7 +212,7 @@ article {
 
 	.slideshow-container span { 
 		position: absolute; 
-		top: 170px; 
+		top: 130px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
@@ -223,7 +223,7 @@ article {
 
 	.slideshow-container .articleDate { 
 		position: absolute; 
-		top: 275px; 
+		top: 245px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
@@ -386,7 +386,7 @@ article {
 
 	.slideshow-container span { 
 		position: absolute; 
-		top: 240px; 
+		top: 205px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
@@ -397,7 +397,7 @@ article {
 
 	.slideshow-container .articleDate { 
 		position: absolute; 
-		top: 400px; 
+		top: 380px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
