@@ -17,11 +17,15 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 	})
 
 	.when('/trade-deadline-breakdown', {
-		templateUrl : 'articles/TradeDeadlineBreakdownArticle.html'
+		templateUrl : 'articles/oarticles/TradeDeadlineBreakdownArticle.html'
 	})
 
 	.when('/nba-redraft', {
 		templateUrl : 'articles/nba-redraft.html'
+	})
+
+	.when('/warriors-spurs', {
+		templateUrl : 'articles/warriors-spurs.html'
 	})
 
 	.when('/last-straw', {
@@ -49,35 +53,35 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 	})
 
 		.when('/nba-winners-losers', {
-		templateUrl : 'articles/nba-winners-losers.html'
+		templateUrl : 'articles/oarticles/nba-winners-losers.html'
 	})
 
 		.when('/rookies-new-teams', {
-		templateUrl : 'articles/rookies-new-teams.html'
+		templateUrl : 'articles/oarticles/rookies-new-teams.html'
 	})		
 
 		.when('/ball-vs-fultz', {
-		templateUrl : 'articles/ball-vs-fultz.html'
+		templateUrl : 'articles/oarticles/ball-vs-fultz.html'
 	})		
 
 		.when('/contender-pretender', {
-		templateUrl : 'articles/contender-pretender.html'
+		templateUrl : 'articles/oarticles/contender-pretender.html'
 	})	
 
 		.when('/mn-vs-phi', {
-		templateUrl : 'articles/mn-vs-phi.html'
+		templateUrl : 'articles/oarticles/mn-vs-phi.html'
 	})	
 
 		.when('/nba-mock-draft', {
-		templateUrl : 'articles/nba-mock-draft.html'
+		templateUrl : 'articles/oarticles/nba-mock-draft.html'
 	})	
 
 		.when('/nba-super-team', {
-		templateUrl : 'articles/nba-super-team.html'
+		templateUrl : 'articles/oarticles/nba-super-team.html'
 	})	
 
 		.when('/drew-hanlen', {
-		templateUrl : 'articles/drew-hanlen.html'
+		templateUrl : 'articles/oarticles/drew-hanlen.html'
 	})	
 
 		.when('/featured-articles', {
