@@ -16,6 +16,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'western-conference.html'
 	})
 
+	.when('/celtics-cavs', {
+		templateUrl : 'articles/celtics-cavs.html'
+	})
+
 	.when('/trade-deadline-breakdown', {
 		templateUrl : 'articles/TradeDeadlineBreakdownArticle.html'
 	})
