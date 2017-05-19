@@ -117,6 +117,16 @@ article {
 	opacity: .5;
 }
 
+.nba-draft .image {
+	background: black;
+}
+
+.nba-draft img {
+	width: 100%;
+	height: 300;
+	opacity: .5;
+}
+
 .image { 
 	position: relative; 
 	width: 100%; /* for IE 6 */
@@ -134,6 +144,28 @@ article {
 }
 
 .featured-articles .articleDate { 
+	position: absolute; 
+	top: 250px; 
+	left: 0; 
+	width: 100%; 
+	color: #ffffff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.nba-draft span { 
+	position: absolute; 
+	top: 150px; 
+	left: 0; 
+	width: 100%; 
+	color: #ffffff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 35px;
+}
+
+.nba-draft .articleDate { 
 	position: absolute; 
 	top: 250px; 
 	left: 0; 
@@ -260,6 +292,31 @@ article {
 		font-size: 15px;
 	}
 
+	.nba-draft img {
+		width: 100%;
+		height: 225px;
+	}
+
+	.nba-draft span {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-draft .articleDate {
+		position: absolute;
+		top: 175px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 15px;
+	}
+
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -315,6 +372,30 @@ article {
 	}
 
 	.featured-articles .articleDate {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-draft img {
+		height: 350px;
+	}
+
+	.nba-draft span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.nba-draft .articleDate {
 		position: absolute;
 		top: 280px;
 		left: 0;
@@ -426,6 +507,30 @@ article {
 	}
 
 	.featured-articles .articleDate {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-draft img {
+		height: 350px;
+	}
+
+	.nba-draft span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.nba-draft .articleDate {
 		position: absolute;
 		top: 280px;
 		left: 0;
