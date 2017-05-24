@@ -322,6 +322,16 @@ article {
 		width: 75px;
 }	
 
+	#kat img {
+		height: 375px;
+		width: 275px;
+}
+
+	#tweet img{
+		height: 125px;
+		width: 100%;
+	}
+
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -341,6 +351,10 @@ article {
 
 	p {
 		font-size: 18px;
+	}
+
+	article p{
+		font-size: 20px;
 	}
 
 	.navbar .container-fluid {
@@ -417,6 +431,16 @@ article {
 	article img {
 		width: 100%;
 		height: 400px;
+	}
+
+	#kat img {
+		height: 500px;
+		width: 400px;
+}
+
+	#tweet img{
+		height: 275px;
+		width: 100%;
 	}
 
 }
@@ -562,6 +586,17 @@ article {
 		height: 100px;
 		width: 100px;
 }
+
+	#kat img {
+		height: 550px;
+		width: 375px;
+}
+
+	#tweet img{
+		height: 275px;
+		width: 60%;
+	}
+
 
 }
 
