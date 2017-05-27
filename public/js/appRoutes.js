@@ -40,6 +40,11 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/jonathan-issac.html'
 	})
 
+	.when('/nba-mock-draft-1', {
+		templateUrl : 'articles/nba-mock-draft-1.html'
+	})
+
+
 	.when('/celtics-cavs', {
 		templateUrl : 'articles/celtics-cavs.html'
 	})

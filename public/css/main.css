@@ -573,6 +573,10 @@ article {
 		font-size: 20px;
 	}
 
+	.nba-news img {
+		height: 250px;
+	}
+
 	footer {
 		height: 75px;
 		margin-top: 25px;
