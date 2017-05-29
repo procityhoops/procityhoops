@@ -24,6 +24,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/rubio.html'
 	})
 
+	.when('/knicks-pick', {
+		templateUrl : 'articles/knicks-pick.html'
+	})
+
 	.when('/towns-review', {
 		templateUrl : 'articles/towns-review.html'
 	})
