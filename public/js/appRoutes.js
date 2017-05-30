@@ -20,12 +20,24 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/celtics-frontcourt', {
+		templateUrl : 'articles/celtics-frontcourt.html'
+	})
+
+	.when('/noel-contract', {
+		templateUrl : 'articles/noel-contract.html'
+	})
+
 	.when('/rubio', {
 		templateUrl : 'articles/rubio.html'
 	})
 
 	.when('/knicks-pick', {
 		templateUrl : 'articles/knicks-pick.html'
+	})
+
+	.when('/lakers-pick', {
+		templateUrl : 'articles/lakers-pick.html'
 	})
 
 	.when('/towns-review', {
