@@ -20,6 +20,14 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/pistons-trade', {
+		templateUrl : 'articles/pistons-trade.html'
+	})
+
+	.when('/bledsoe-trade', {
+		templateUrl : 'articles/bledsoe-trade.html'
+	})
+
 	.when('/celtics-frontcourt', {
 		templateUrl : 'articles/celtics-frontcourt.html'
 	})
@@ -34,6 +42,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 
 	.when('/knicks-pick', {
 		templateUrl : 'articles/knicks-pick.html'
+	})
+
+	.when('/sixers-pick', {
+		templateUrl : 'articles/sixers-pick.html'
 	})
 
 	.when('/lakers-pick', {
