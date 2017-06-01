@@ -44,6 +44,10 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/knicks-pick.html'
 	})
 
+	.when('/finals-preview', {
+		templateUrl : 'articles/finals-preview.html'
+	})
+
 	.when('/sixers-pick', {
 		templateUrl : 'articles/sixers-pick.html'
 	})
