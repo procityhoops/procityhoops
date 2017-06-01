@@ -254,6 +254,11 @@ article {
 		height: 200px;
 	}
 
+	article iframe {
+		width: 100%;
+		height: 185px;
+	}
+
 	.slideshow-container h1{
 		font-size: 25px;
 	}
@@ -414,6 +419,11 @@ article {
 		font-size: 20px;
 	}
 
+	article iframe {
+		width: 560px;
+		height: 315px;
+	}
+
 	.navbar .container-fluid {
 		padding-right: 0px;
 		padding-left: 0px;
@@ -567,6 +577,11 @@ article {
 	article img {
 		width: 60%;
 		height: 500px;
+	}
+
+	article iframe {
+		width: 560px;
+		height: 315px;
 	}
 
 	.banner {
