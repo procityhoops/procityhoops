@@ -394,6 +394,10 @@ article {
 		width: 100%;
 	}
 
+	#author p {
+		font-size: 12px;
+	}
+
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -415,7 +419,7 @@ article {
 		font-size: 18px;
 	}
 
-	article p{
+	article p {
 		font-size: 20px;
 	}
 
@@ -532,6 +536,10 @@ article {
 	#tweet img{
 		height: 275px;
 		width: 100%;
+	}
+
+	#author p {
+		font-size: 16px;
 	}
 
 }
@@ -715,6 +723,10 @@ article {
 	#tweet img{
 		height: 275px;
 		width: 60%;
+	}
+
+	#author p {
+		font-size: 16px;
 	}
 
 
