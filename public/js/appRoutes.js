@@ -92,6 +92,9 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'articles/nba-mock-draft-1.html'
 	})
 
+	.when('/tatum-comparison', {
+		templateUrl : 'articles/tatum-comparison.html'
+	})
 
 	.when('/celtics-cavs', {
 		templateUrl : 'articles/celtics-cavs.html'
