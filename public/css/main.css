@@ -266,6 +266,11 @@ article {
 		height: 200px;
 	}
 
+	article iframe {
+		width: 100%;
+		height: 185px;
+	}
+
 	.slideshow-container h1{
 		font-size: 25px;
 	}
@@ -401,6 +406,10 @@ article {
 		width: 100%;
 	}
 
+	#author p {
+		font-size: 12px;
+	}
+
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -434,8 +443,13 @@ article {
 		font-size: 18px;
 	}
 
-	article p{
+	article p {
 		font-size: 20px;
+	}
+
+	article iframe {
+		width: 560px;
+		height: 315px;
 	}
 
 	.navbar .container-fluid {
@@ -548,6 +562,10 @@ article {
 		width: 100%;
 	}
 
+	#author p {
+		font-size: 16px;
+	}
+
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
@@ -591,6 +609,11 @@ article {
 	article img {
 		width: 60%;
 		height: 500px;
+	}
+
+	article iframe {
+		width: 560px;
+		height: 315px;
 	}
 
 	.banner {
@@ -724,6 +747,10 @@ article {
 	#tweet img{
 		height: 275px;
 		width: 60%;
+	}
+
+	#author p {
+		font-size: 16px;
 	}
 
 
