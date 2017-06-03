@@ -164,4 +164,6 @@ angular.module('appRoutes', []).config(function($routeProvider) {
 		templateUrl : 'views/standings.html',
 		controller: 'StandingsController'
 	})
+
+	.otherwise({templateUrl:'views/404.html'});
 });

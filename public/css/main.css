@@ -39,6 +39,18 @@ footer a:hover {
 	white-space: nowrap;
 }
 
+.page404 {
+	text-align: center; 
+	font-size: 30px; 
+	color: grey;
+}
+
+.page404-text {
+	text-align: center; 
+	font-size: 15px; 
+	color: grey;
+}
+
 #social-sidebar {
 	left: 0;
 	position: fixed;
@@ -398,6 +410,18 @@ article {
 
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 768px) {
+
+	.page404 {
+		text-align: center; 
+		font-size: 50px; 
+		color: grey;
+	}
+
+	.page404-text {
+		text-align: center; 
+		font-size: 30px; 
+		color: grey;
+	}
 	#myNavbar {
 		overflow-y: auto !important;
 	}
