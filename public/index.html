@@ -7,6 +7,7 @@
 	<meta name="description" content="Welcome to ProCity Hoops. We are consistently writing new, professional NBA articles. Check out our site for coverage on the NBA Draft, NBA Playoffs, and so much more!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<base href="/">
 	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
@@ -62,20 +63,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				</button>
-				<a style="padding-left: 10px;" href="#/"><img src="/assets/images/ProCityHoopsIcon.png" style="max-height: 50px;"></a>		
+				<a style="padding-left: 10px;" href="/"><img src="/assets/images/ProCityHoopsIcon.png" style="max-height: 50px;"></a>		
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#/">Home</a></li>
+					<li class="active"><a href="/">Home</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown">
 							Eastern Conference
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#eastern-conference">- View All -</a></li>
+							<li><a href="eastern-conference">- View All -</a></li>
 							<li ng-repeat="team in teams | filter:{conference:'East'}">
-								<a href="#team/{{team.teamId}}">{{team.name}}</a>
+								<a href="team/{{team.teamId}}">{{team.name}}</a>
 							</li>
 						</ul>
 					</li>
@@ -85,17 +86,17 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#western-conference">- View All -</a></li>
+							<li><a href="western-conference">- View All -</a></li>
 							<li ng-repeat="team in teams | filter:{conference:'West'}">
-								<a href="#team/{{team.teamId}}">{{team.name}}</a>
+								<a href="team/{{team.teamId}}">{{team.name}}</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#nba-news">NBA News</a>
+						<a href="nba-news">NBA News</a>
 					</li>
 					<li>
-						<a href="#league-leaders">NBA Stats</a>
+						<a href="league-leaders">NBA Stats</a>
 					</li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown">
@@ -103,15 +104,15 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#featured-articles">- View All -</a></li>
-							<li><a href="#irving-curry">Kyrie Irving vs Steph Curry Debate</a></li>
-							<li><a href="#finals-preview">NBA Finals Preview</a></li>
-							<li><a href="#sixers-pick">What should the Sixers do with pick #3?</a></li>
-							<li><a href="#lakers-pick">What should the Lakers do with pick #2?</a></li>
-							<li><a href="#towns-review">Karl-Anthony Towns: Season Review</a></li>
-							<li><a href="#celtics-pick">What should the Celtics do with the first pick?</a></li>
-							<li><a href="#celtics-cavs">Celtics vs. Cavaliers Series Preview</a></li>
-							<li><a href="#warriors-spurs">Warriors vs. Spurs Series Preview</a></li>
+							<li><a href="featured-articles">- View All -</a></li>
+							<li><a href="irving-curry">Kyrie Irving vs Steph Curry Debate</a></li>
+							<li><a href="finals-preview">NBA Finals Preview</a></li>
+							<li><a href="sixers-pick">What should the Sixers do with pick #3?</a></li>
+							<li><a href="lakers-pick">What should the Lakers do with pick #2?</a></li>
+							<li><a href="towns-review">Karl-Anthony Towns: Season Review</a></li>
+							<li><a href="celtics-pick">What should the Celtics do with the first pick?</a></li>
+							<li><a href="celtics-cavs">Celtics vs. Cavaliers Series Preview</a></li>
+							<li><a href="warriors-spurs">Warriors vs. Spurs Series Preview</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -120,14 +121,14 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#nba-draft">- View All -</a></li>
-							<li><a href="#tatum-comparison">Jayson Tatum NBA Comparison</a></li>
-							<li><a href="#nba-mock-draft-1">NBA Mock Draft 1.0</a></li>
-							<li><a href="#jonathan-issac">Jonathan Isaac Draft Profile</a></li>
+							<li><a href="nba-draft">- View All -</a></li>
+							<li><a href="tatum-comparison">Jayson Tatum NBA Comparison</a></li>
+							<li><a href="nba-mock-draft-1">NBA Mock Draft 1.0</a></li>
+							<li><a href="jonathan-issac">Jonathan Isaac Draft Profile</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#standings/west">Standings</a>
+						<a href="standings/west">Standings</a>
 					</li>
 				</ul>
 			</div>
@@ -154,12 +155,12 @@
 		<!-- Footer -->
 	<footer class="footer">
 		<div class="hidden-sm hidden-xs">
-			<a href="#/">Home</a> | 
-			<a href="#eastern-conference">Eastern Conference</a> | 
-			<a href="#western-conference">Western Conference</a> | 
-			<a href="#league-leaders">NBA Stats</a> | 
-			<a href="#featured-articles">Featured Articles</a> | 
-			<a href="#standings/east">Standings</a>
+			<a href="/">Home</a> | 
+			<a href="eastern-conference">Eastern Conference</a> | 
+			<a href="western-conference">Western Conference</a> | 
+			<a href="league-leaders">NBA Stats</a> | 
+			<a href="featured-articles">Featured Articles</a> | 
+			<a href="standings/east">Standings</a>
 		</div>
 	</footer>
 </body>
