@@ -6,7 +6,7 @@ var AppUtil = require('./util');
 var logger = require('winston');
 logger.add(logger.transports.File, { filename: 'logs/ProCityHoops-Error.log' });
 
-module.exports = function(app) {
+module.exports = function(app, passport) {
 	// server routes ===========================================================
 	// handle things like api calls
 	// authentication routes
@@ -86,6 +86,55 @@ module.exports = function(app) {
 	});
 
 	// frontend routes =========================================================
+	
+	app.get('/admin', isLoggedIn, function(req, res) {
+		try
+		{
+			res.sendfile('./public/admin/admin.html');
+		}
+		catch (err) {
+			logger.log('error', err);
+		}
+	});
+
+	app.get('/admin/login', function(req, res) {
+		try
+		{
+			res.sendfile('./public/admin/login.html');
+		}
+		catch (err) {
+			logger.log('error', err);
+		}
+	});
+
+	app.post('/login', passport.authenticate('local-login', {
+		successRedirect : '/admin', // redirect to the secure profile section
+		failureRedirect : '/admin/login', // redirect back to the signup page if there is an error
+		failureFlash : true // allow flash messages
+	}));
+
+	// don't allow signups to the front end so commenting out this route
+	/*app.get('/admin/signup', function(req, res) {
+		try
+		{
+			res.sendfile('./public/admin/signup.html');
+		}
+		catch (err) {
+			logger.log('error', err);
+		}
+	});
+	app.post('/signup', passport.authenticate('local-signup', {
+		successRedirect : '/admin', // redirect to the secure profile section
+		failureRedirect : '/admin/signup', // redirect back to the signup page if there is an error
+		failureFlash : true // allow flash messages
+	}));
+	*/
+
+	app.get('/admin/logout', function(req, res) {
+		req.logout();
+		res.redirect('/admin/login');
+	});
+
 	// route to handle all angular requests
 	app.get('*', function(req, res) {
 		try
@@ -100,5 +149,14 @@ module.exports = function(app) {
 			logger.log('error', err);
 		}
 	});
-
 };
+
+function isLoggedIn(req, res, next) {
+
+	// if user is authenticated in the session, carry on 
+	if (req.isAuthenticated()){
+		return next();
+	}
+	// if they aren't redirect them to the home page
+	res.redirect('/admin/login');
+}
