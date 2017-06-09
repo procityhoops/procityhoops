@@ -22,6 +22,18 @@ angular.module('appRoutes', []).config(function($routeProvider, $locationProvide
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/markelle-fultz-to-workout-with-sacramento', {
+		templateUrl : 'articles/markelle-fultz-to-workout-with-sacramento.html'
+	})
+
+	.when('/lakers-open-to-dealing-second-pick', {
+		templateUrl : 'articles/lakers-open-to-dealing-second-pick.html'
+	})
+
+	.when('/gordon-hayward-to-miami', {
+		templateUrl : 'articles/gordon-hayward-to-miami.html'
+	})
+
 	.when('/buy-or-sell-lebron-heading-west', {
 		templateUrl : 'articles/buy-or-sell-lebron-heading-west.html'
 	})
