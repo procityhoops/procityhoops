@@ -22,8 +22,16 @@ angular.module('appRoutes', []).config(function($routeProvider, $locationProvide
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/nba-rumors-june-15-2017', {
+		templateUrl : 'articles/nba-rumors-june-15-2017.html'
+	})
+
 	.when('/nba-mock-draft-two', {
 		templateUrl : 'articles/nba-mock-draft-two.html'
+	})
+
+	.when('/markelle-fultz-draft-profile', {
+		templateUrl : 'articles/markelle-fultz-draft-profile.html'
 	})
 
 	.when('/lonzo-ball-draft-profile', {
