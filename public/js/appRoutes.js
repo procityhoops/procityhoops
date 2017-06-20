@@ -22,6 +22,22 @@ angular.module('appRoutes', []).config(function($routeProvider, $locationProvide
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/russell-to-brooklyn-lopez-to-lakers', {
+		templateUrl : 'articles/russell-to-brooklyn-lopez-to-lakers.html'
+	})
+
+	.when('/kevin-durant-joins-the-warriors', {
+		templateUrl : 'articles/kevin-durant-joins-the-warriors.html'
+	})
+
+	.when('/deaaron-fox-draft-profile', {
+		templateUrl : 'articles/deaaron-fox-draft-profile.html'
+	})
+
+	.when('/jarrett-allen-draft-profile', {
+		templateUrl : 'articles/jarrett-allen-draft-profile.html'
+	})
+
 	.when('/nba-mock-draft-three', {
 		templateUrl : 'articles/nba-mock-draft-three.html'
 	})
