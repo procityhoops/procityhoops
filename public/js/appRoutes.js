@@ -22,6 +22,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/darren-wolfson-q-and-a', {
+		templateUrl : 'articles/darren-wolfson-q-and-a.html'
+	})
+
+	.when('/brooklyn-nets-moving-in-the-right-direction', {
+		templateUrl : 'articles/brooklyn-nets-moving-in-the-right-direction.html'
+	})
+
 	.when('/dwight-howard-to-the-hornets', {
 		templateUrl : 'articles/dwight-howard-to-the-hornets.html'
 	})
