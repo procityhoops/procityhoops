@@ -22,6 +22,14 @@ angular.module('appRoutes', []).config(function($routeProvider, $locationProvide
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/kristaps-porzingis-landing-spots', {
+		templateUrl : 'articles/kristaps-porzingis-landing-spots.html'
+	})
+
+	.when('/cavaliers-let-go-of-david-griffin', {
+		templateUrl : 'articles/cavaliers-let-go-of-david-griffin.html'
+	})
+
 	.when('/russell-to-brooklyn-lopez-to-lakers', {
 		templateUrl : 'articles/russell-to-brooklyn-lopez-to-lakers.html'
 	})
