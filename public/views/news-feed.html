@@ -1,0 +1,19 @@
+<style>
+	.headline {
+		background: white;
+		border-radius: 10px;
+		margin-bottom: 10px;
+	}
+	.headline-header {
+		font-size: 24px;
+	}
+</style>
+<div class="container-fluid">
+	<div class="col-lg-offset-3 col-lg-6 col-sm-12 headline" ng-repeat="headline in headlines">
+		<div  style="text-align: center;">
+			<div class="headline-header">{{headline.title}}</div>
+			<span style="color: grey">{{headline.dateAdded  | date : "M/d/yy"}}</span>
+			<article>{{headline.text}}</article>
+		</div>
+	</div>
+</div>

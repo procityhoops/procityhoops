@@ -1,4 +1,4 @@
-angular.module('appRoutes', []).config(function($routeProvider, $locationProvider) {
+angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $locationProvider) {
 
 	$locationProvider.html5Mode(true);
 
@@ -206,5 +206,18 @@ angular.module('appRoutes', []).config(function($routeProvider, $locationProvide
 		controller: 'StandingsController'
 	})
 
+	.when('/news-feed', {
+		templateUrl : 'views/news-feed.html',
+		controller: 'NewsFeedController'
+	})
+
 	.otherwise({templateUrl:'views/404.html'});
+});
+
+angular.module('NewsFeedCtrl', []).controller('NewsFeedController', function($scope, $http, $window, $location) {
+
+	$http.get("/api/getHeadlines")
+		.then(function(response){
+			$scope.headlines = response.data;
+	});
 });

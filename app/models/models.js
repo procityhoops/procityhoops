@@ -40,7 +40,14 @@ var proCityHoopsSchema = new mongoose.Schema({
 	lastUpdated: Date
 });
 
+var headlineSchema = new mongoose.Schema({
+	title: String,
+	text: String,
+	dateAdded: Date
+});
+
 mongoose.model('Game', gameSchema);
 mongoose.model('Player', playerSchema);
 mongoose.model('Team', teamSchema);
 mongoose.model('ProCityHoops', proCityHoopsSchema);
+mongoose.model('Headline', headlineSchema);

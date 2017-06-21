@@ -2,6 +2,7 @@ var mongoose = require( 'mongoose' );
 var Team = mongoose.model('Team');
 var Player = mongoose.model('Player');
 var Game = mongoose.model('Game');
+var Headline = mongoose.model('Headline');
 var AppUtil = require('./util');
 var logger = require('winston');
 logger.add(logger.transports.File, { filename: 'logs/ProCityHoops-Error.log' });
@@ -85,6 +86,27 @@ module.exports = function(app, passport) {
 		});
 	});
 
+	app.post('/api/saveHeadline', isLoggedIn, function(req, res){
+		var headline = new Headline();
+			headline.title = req.body.title;
+			headline.text = req.body.text;
+			headline.dateAdded = new Date();
+			headline.save(function(err, headline) { if (err){return err;} });
+		return res.status(200).send(headline);	
+	});
+
+	app.get('/api/getHeadlines', function(req, res){
+		var query = Headline.find({});
+		query.sort({'dateAdded': 'desc'});
+		query.exec((err, headlines) => {
+			if (err) {
+				logger.log('error', err);
+				throw err;
+			}
+			return res.status(200).send(headlines);
+		});
+	});
+
 	// frontend routes =========================================================
 	
 	app.get('/admin', isLoggedIn, function(req, res) {
@@ -157,6 +179,7 @@ function isLoggedIn(req, res, next) {
 	if (req.isAuthenticated()){
 		return next();
 	}
+	console.log("redirect");
 	// if they aren't redirect them to the home page
 	res.redirect('/admin/login');
 }
