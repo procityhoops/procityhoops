@@ -22,6 +22,10 @@ angular.module('appRoutes', []).config(function($routeProvider, $locationProvide
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/dwight-howard-to-the-hornets', {
+		templateUrl : 'articles/dwight-howard-to-the-hornets.html'
+	})
+
 	.when('/kristaps-porzingis-landing-spots', {
 		templateUrl : 'articles/kristaps-porzingis-landing-spots.html'
 	})
