@@ -22,6 +22,110 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/dwight-howard-to-the-hornets', {
+		templateUrl : 'articles/dwight-howard-to-the-hornets.html'
+	})
+
+	.when('/kristaps-porzingis-landing-spots', {
+		templateUrl : 'articles/kristaps-porzingis-landing-spots.html'
+	})
+
+	.when('/cavaliers-let-go-of-david-griffin', {
+		templateUrl : 'articles/cavaliers-let-go-of-david-griffin.html'
+	})
+
+	.when('/russell-to-brooklyn-lopez-to-lakers', {
+		templateUrl : 'articles/russell-to-brooklyn-lopez-to-lakers.html'
+	})
+
+	.when('/kevin-durant-joins-the-warriors', {
+		templateUrl : 'articles/kevin-durant-joins-the-warriors.html'
+	})
+
+	.when('/deaaron-fox-draft-profile', {
+		templateUrl : 'articles/deaaron-fox-draft-profile.html'
+	})
+
+	.when('/jarrett-allen-draft-profile', {
+		templateUrl : 'articles/jarrett-allen-draft-profile.html'
+	})
+
+	.when('/nba-mock-draft-three', {
+		templateUrl : 'articles/nba-mock-draft-three.html'
+	})
+
+	.when('/dennis-smith-draft-profile', {
+		templateUrl : 'articles/dennis-smith-draft-profile.html'
+	})
+
+	.when('/jimmy-butler-on-the-move', {
+		templateUrl : 'articles/jimmy-butler-on-the-move.html'
+	})
+
+	.when('/paul-george-is-leaving-indiana', {
+		templateUrl : 'articles/paul-george-is-leaving-indiana.html'
+	})
+
+	.when('/celtics-and-sixers-trade-agreed-upon', {
+		templateUrl : 'articles/celtics-and-sixers-trade-agreed-upon.html'
+	})
+
+	.when('/celtics-sixers-trade-pick-one', {
+		templateUrl : 'articles/celtics-sixers-trade-pick-one.html'
+	})
+
+	.when('/nba-rumors-june-15-2017', {
+		templateUrl : 'articles/nba-rumors-june-15-2017.html'
+	})
+
+	.when('/nba-mock-draft-two', {
+		templateUrl : 'articles/nba-mock-draft-two.html'
+	})
+
+	.when('/markelle-fultz-draft-profile', {
+		templateUrl : 'articles/markelle-fultz-draft-profile.html'
+	})
+
+	.when('/lonzo-ball-draft-profile', {
+		templateUrl : 'articles/lonzo-ball-draft-profile.html'
+	})
+
+	.when('/malik-monk-draft-profile', {
+		templateUrl : 'articles/malik-monk-draft-profile.html'
+	})
+
+	.when('/zach-collins-draft-profile', {
+		templateUrl : 'articles/zach-collins-draft-profile.html'
+	})
+
+	.when('/luke-kennard-draft-profile', {
+		templateUrl : 'articles/luke-kennard-draft-profile.html'
+	})
+
+	.when('/markelle-fultz-to-workout-with-sacramento', {
+		templateUrl : 'articles/markelle-fultz-to-workout-with-sacramento.html'
+	})
+
+	.when('/lakers-open-to-dealing-second-pick', {
+		templateUrl : 'articles/lakers-open-to-dealing-second-pick.html'
+	})
+
+	.when('/gordon-hayward-to-miami', {
+		templateUrl : 'articles/gordon-hayward-to-miami.html'
+	})
+
+	.when('/buy-or-sell-lebron-heading-west', {
+		templateUrl : 'articles/buy-or-sell-lebron-heading-west.html'
+	})
+
+	.when('/fix-super-teams', {
+		templateUrl : 'articles/fix-super-teams.html'
+	})
+
+	.when('/cavs-rumors', {
+		templateUrl : 'articles/cavs-rumors.html'
+	})
+
 	.when('/nba-draft-rumors', {
 		templateUrl : 'articles/nba-draft-rumors.html'
 	})

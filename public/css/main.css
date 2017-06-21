@@ -410,6 +410,38 @@ article {
 		font-size: 12px;
 	}
 
+	.mock-draft table {
+		 font-family: arial, sans-serif;
+   		 border-collapse: collapse;
+    	width: 100%;
+	}
+
+	.mock-draft td {
+    		border: 1px solid #dddddd;
+   		 text-align: center;
+   		 padding: 2px;
+	}
+
+	.mock-draft img {
+		display: block;
+   		 margin: auto;
+   		 width: 45px;
+		height: 45px;
+	}
+
+	.mock-draft th {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.mock-draft td {
+    font-size: 10px;
+	}
+
+	.mock-draft h1 {
+		font-size: 25px;
+	}
+
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -564,6 +596,38 @@ article {
 
 	#author p {
 		font-size: 16px;
+	}
+
+	.mock-draft table {
+		 font-family: arial, sans-serif;
+   		 border-collapse: collapse;
+    	width: 100%;
+	}
+
+	.mock-draft td {
+    		border: 1px solid #dddddd;
+   		 text-align: center;
+   		 padding: 10px;
+	}
+
+	.mock-draft img {
+		display: block;
+   		 margin: auto;
+   		 width: 80px;
+		height: 80px;
+	}
+
+	.mock-draft th {
+		text-align: center;
+		font-size: 23px;
+	}
+
+	.mock-draft td {
+    font-size: 18px;
+	}
+
+	.mock-draft h1 {
+		font-size: 30px;
 	}
 
 }
@@ -723,6 +787,40 @@ article {
 		text-align: center;
 		font-weight: bolder;
 		font-size: 20px;
+	}
+
+	.mock-draft table {
+		 font-family: arial, sans-serif;
+   		 border-collapse: collapse;
+    	width: 90%;
+	}
+
+	.mock-draft td {
+    		border: 1px solid #dddddd;
+   		 text-align: center;
+   		 padding: 20px;
+   		 height: 100px;
+   		 width: 50px;
+	}
+
+	.mock-draft img {
+		display: block;
+   		 margin: auto;
+   		 width: 105px;
+		height: 105px;
+	}
+
+	.mock-draft th {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.mock-draft td {
+    font-size: 25px;
+	}
+
+	.mock-draft h1 {
+		font-size: 30px;
 	}
 
 	footer {
