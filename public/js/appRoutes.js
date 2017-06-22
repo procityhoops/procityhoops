@@ -58,6 +58,10 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/jarrett-allen-draft-profile.html'
 	})
 
+	.when('/nba-mock-draft-four', {
+		templateUrl : 'articles/nba-mock-draft-four.html'
+	})
+
 	.when('/nba-mock-draft-three', {
 		templateUrl : 'articles/nba-mock-draft-three.html'
 	})
