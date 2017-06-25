@@ -22,6 +22,25 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/nba-free-agency-previews', {
+		templateUrl : 'nba-free-agency-previews.html'
+	})
+	.when('/philadelphia-76ers-free-agency-preview', {
+		templateUrl : 'articles/philadelphia-76ers-free-agency-preview.html'
+	})
+
+	.when('/los-angeles-lakers-free-agency-preview', {
+		templateUrl : 'articles/los-angeles-lakers-free-agency-preview.html'
+	})
+
+	.when('/brooklyn-nets-free-agency-preview', {
+		templateUrl : 'articles/brooklyn-nets-free-agency-preview.html'
+	})
+
+	.when('/phoenix-suns-free-agency-preview', {
+		templateUrl : 'articles/phoenix-suns-free-agency-preview.html'
+	})
+
 	.when('/nba-draft-grades-2017', {
 		templateUrl : 'articles/nba-draft-grades-2017.html'
 	})
