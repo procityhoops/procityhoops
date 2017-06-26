@@ -25,6 +25,23 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 	.when('/nba-free-agency-previews', {
 		templateUrl : 'nba-free-agency-previews.html'
 	})
+
+	.when('/minnesota-timberwolves-free-agency-preview', {
+		templateUrl : 'articles/minnesota-timberwolves-free-agency-preview.html'
+	})
+
+	.when('/new-york-knicks-free-agency-preview', {
+		templateUrl : 'articles/new-york-knicks-free-agency-preview.html'
+	})
+
+	.when('/sacramento-kings-free-agency-preview', {
+		templateUrl : 'articles/sacramento-kings-free-agency-preview.html'
+	})
+
+	.when('/orlando-magic-free-agency-preview', {
+		templateUrl : 'articles/orlando-magic-free-agency-preview.html'
+	})
+
 	.when('/philadelphia-76ers-free-agency-preview', {
 		templateUrl : 'articles/philadelphia-76ers-free-agency-preview.html'
 	})
