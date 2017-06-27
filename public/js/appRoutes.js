@@ -26,6 +26,38 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/milwaukee-bucks-free-agency-preview', {
+		templateUrl : 'articles/milwaukee-bucks-free-agency-preview.html'
+	})
+
+	.when('/utah-jazz-free-agency-preview', {
+		templateUrl : 'articles/utah-jazz-free-agency-preview.html'
+	})
+
+	.when('/oklahoma-city-thunder-free-agency-preview', {
+		templateUrl : 'articles/oklahoma-city-thunder-free-agency-preview.html'
+	})
+
+	.when('/portland-trail-blazers-free-agency-preview', {
+		templateUrl : 'articles/portland-trail-blazers-free-agency-preview.html'
+	})
+
+	.when('/miami-heat-free-agency-preview', {
+		templateUrl : 'articles/miami-heat-free-agency-preview.html'
+	})
+
+	.when('/detroit-pistons-free-agency-preview', {
+		templateUrl : 'articles/detroit-pistons-free-agency-preview.html'
+	})
+
+	.when('/denver-nuggets-free-agency-preview', {
+		templateUrl : 'articles/denver-nuggets-free-agency-preview.html'
+	})
+
+	.when('/new-orleans-pelicans-free-agency-preview', {
+		templateUrl : 'articles/new-orleans-pelicans-free-agency-preview.html'
+	})
+
 	.when('/dallas-mavericks-free-agency-preview', {
 		templateUrl : 'articles/dallas-mavericks-free-agency-preview.html'
 	})
