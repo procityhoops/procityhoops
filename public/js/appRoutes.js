@@ -30,6 +30,30 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/milwaukee-bucks-free-agency-preview.html'
 	})
 
+	.when('/indiana-pacers-free-agency-preview', {
+		templateUrl : 'articles/indiana-pacers-free-agency-preview.html'
+	})
+
+	.when('/washington-wizards-free-agency-preview', {
+		templateUrl : 'articles/washington-wizards-free-agency-preview.html'
+	})
+
+	.when('/cleveland-cavaliers-free-agency-preview', {
+		templateUrl : 'articles/cleveland-cavaliers-free-agency-preview.html'
+	})
+
+	.when('/golden-state-warriors-free-agency-preview', {
+		templateUrl : 'articles/golden-state-warriors-free-agency-preview.html'
+	})
+
+	.when('/los-angeles-clippers-free-agency-preview', {
+		templateUrl : 'articles/los-angeles-clippers-free-agency-preview.html'
+	})
+
+	.when('/chicago-bulls-free-agency-preview', {
+		templateUrl : 'articles/chicago-bulls-free-agency-preview.html'
+	})
+
 	.when('/utah-jazz-free-agency-preview', {
 		templateUrl : 'articles/utah-jazz-free-agency-preview.html'
 	})
