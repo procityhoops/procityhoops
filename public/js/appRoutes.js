@@ -26,6 +26,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/phil-jackson-a-eulogy', {
+		templateUrl : 'articles/phil-jackson-a-eulogy.html'
+	})
+
+	.when('/nba-draft-steals-2017', {
+		templateUrl : 'articles/nba-draft-steals-2017.html'
+	})
+
 	.when('/boston-celtics-free-agency-preview', {
 		templateUrl : 'articles/boston-celtics-free-agency-preview.html'
 	})
