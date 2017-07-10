@@ -26,6 +26,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/lamarcus-aldridge-trade-mystery', {
+		templateUrl : 'articles/lamarcus-aldridge-trade-mystery.html'
+	})
+
+	.when('/brooklyn-nets-need-to-sign-kcp', {
+		templateUrl : 'articles/brooklyn-nets-need-to-sign-kcp.html'
+	})
+
 	.when('/flip-saunders-his-vision-lives-on', {
 		templateUrl : 'articles/flip-saunders-his-vision-lives-on.html'
 	})
