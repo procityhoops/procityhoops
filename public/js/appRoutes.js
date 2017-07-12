@@ -10,6 +10,26 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		controller: 'HomeController'
 	})
 
+	.when('/team/:teamID', {
+		templateUrl : 'views/team-page.html',
+		controller: 'TeamController'
+	})
+
+	.when('/league-leaders', {
+		templateUrl : 'views/league-leaders.html',
+		controller: 'LeagueLeadersController'
+	})
+
+	.when('/standings/:conference', {
+		templateUrl : 'views/standings.html',
+		controller: 'StandingsController'
+	})
+
+	.when('/news-feed', {
+		templateUrl : 'views/news-feed.html',
+		controller: 'NewsFeedController'
+	})
+
 	.when('/eastern-conference', {
 		templateUrl : 'eastern-conference.html'
 	})
@@ -456,27 +476,6 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 
 		.when('/featured-articles', {
 		templateUrl : 'featured-articles.html'
-	})
-
-
-	.when('/team/:teamID', {
-		templateUrl : 'views/team-page.html',
-		controller: 'TeamController'
-	})
-
-	.when('/league-leaders', {
-		templateUrl : 'views/league-leaders.html',
-		controller: 'LeagueLeadersController'
-	})
-
-	.when('/standings/:conference', {
-		templateUrl : 'views/standings.html',
-		controller: 'StandingsController'
-	})
-
-	.when('/news-feed', {
-		templateUrl : 'views/news-feed.html',
-		controller: 'NewsFeedController'
 	})
 
 	.otherwise({templateUrl:'views/404.html'});

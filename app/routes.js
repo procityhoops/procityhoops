@@ -5,7 +5,10 @@ var Game = mongoose.model('Game');
 var Headline = mongoose.model('Headline');
 var AppUtil = require('./util');
 var logger = require('winston');
+var SitemapHelper = require('./helpers/SitemapHelper');
 logger.add(logger.transports.File, { filename: 'logs/ProCityHoops-Error.log' });
+
+var sitemap = SitemapHelper.generateSitemap();
 
 module.exports = function(app, passport) {
 	// server routes ===========================================================
@@ -155,6 +158,16 @@ module.exports = function(app, passport) {
 	app.get('/admin/logout', function(req, res) {
 		req.logout();
 		res.redirect('/admin/login');
+	});
+
+	app.get('/sitemap.xml', function(req, res) {
+		sitemap.toXML( function (err, xml) {
+			if (err) {
+				return res.status(500).end();
+			}
+			res.header('Content-Type', 'application/xml');
+			res.send( xml );
+		});
 	});
 
 	// route to handle all angular requests
