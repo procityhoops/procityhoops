@@ -481,10 +481,31 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 	.otherwise({templateUrl:'views/404.html'});
 });
 
-angular.module('NewsFeedCtrl', []).controller('NewsFeedController', function($scope, $http, $window, $location) {
+angular.module('NewsFeedCtrl', ['infinite-scroll']).controller('NewsFeedController', function($scope, $http, $window, $location) {
 
-	$http.get("/api/getHeadlines")
-		.then(function(response){
-			$scope.headlines = response.data;
-	});
+	$scope.headlines = [];
+	$scope.lowerBound = 0;
+	$scope.isBusy = false;
+	$scope.stopLoading = false;
+
+	$scope.myPagingFunction = function (){
+		if(!$scope.isBusy && !$scope.stopLoading)
+		{
+			$scope.isBusy = true;
+			getHeadlines($scope.lowerBound);	
+		}	
+	};
+
+	var getHeadlines = function(lowerBound) {
+		$http.get("/api/getHeadlines/"+lowerBound)
+			.then(function(response){
+				if(response.data.length === 0)
+				{
+					$scope.stopLoading = true;
+				}
+				Array.prototype.push.apply($scope.headlines, response.data);
+				$scope.lowerBound += 10;
+				$scope.isBusy = false;
+		});
+	}
 });

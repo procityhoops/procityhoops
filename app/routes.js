@@ -98,9 +98,12 @@ module.exports = function(app, passport) {
 		return res.status(200).send(headline);	
 	});
 
-	app.get('/api/getHeadlines', function(req, res){
+	app.get('/api/getHeadlines/:lowerBound', function(req, res){
+
 		var query = Headline.find({});
 		query.sort({'dateAdded': 'desc'});
+		query.skip(parseInt(req.params.lowerBound));
+		query.limit(10);
 		query.exec((err, headlines) => {
 			if (err) {
 				logger.log('error', err);
