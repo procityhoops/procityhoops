@@ -287,13 +287,13 @@ article {
 
 	.slideshow-container img {
 		width: 100%;
-		height: 200px;
+		height: 210px;
 		opacity: .5;
 	}
 
 	.slideshow-container span { 
 		position: absolute; 
-		top: 85px; 
+		top: 110px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
@@ -304,7 +304,7 @@ article {
 
 	.slideshow-container .articleDate { 
 		position: absolute; 
-		top: 170px; 
+		top: 195px; 
 		left: 0; 
 		width: 100%; 
 		color: #ffffff;
@@ -312,6 +312,7 @@ article {
 		font-weight: bolder;
 		font-size: 12px;
 	}
+
 	footer {
 		height: 50px;
 		margin-top: 25px;
@@ -507,8 +508,36 @@ article {
 		font-size: 36px;
 	}
 
+	.slideshow-container img {
+		width: 100%;
+		height: 400px;
+		opacity: .5;
+	}
+
+	.slideshow-container span { 
+		position: absolute; 
+		top: 205px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.slideshow-container .articleDate { 
+		position: absolute; 
+		top: 380px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
 	.featured-articles img {
-		height: 350px;
+		height: 375px;
 	}
 
 	.featured-articles span {
@@ -691,7 +720,7 @@ article {
 
 	.slideshow-container img {
 		width: 100%;
-		height: 375;
+		height: 400px;
 		opacity: .5;
 	}
 
