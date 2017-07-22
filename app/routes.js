@@ -93,17 +93,34 @@ module.exports = function(app, passport) {
 		var headline = new Headline();
 			headline.title = req.body.title;
 			headline.text = req.body.text;
-			headline.dateAdded = new Date();
-			headline.save(function(err, headline) { if (err){return err;} });
+			if (req.body.id) 
+			{
+				var id = mongoose.Types.ObjectId(req.body.id);
+				var upsertData = headline.toObject();
+
+				// Delete the _id property, otherwise Mongo will return a "Mod on _id not allowed" error
+				delete upsertData._id;
+
+				Headline.update({_id: id}, upsertData, {upsert: true}, function(err, headline){ 
+					if (err){return err;} 
+					console.log(headline);
+				});
+			}
+			else
+			{
+				headline.dateAdded = new Date();
+				headline.save(function(err, headline) { if (err){return err;} });
+			}
+			
 		return res.status(200).send(headline);	
 	});
 
-	app.get('/api/getHeadlines/:lowerBound', function(req, res){
+	app.get('/api/getHeadlines/:lowerBound/:count', function(req, res){
 
 		var query = Headline.find({});
 		query.sort({'dateAdded': 'desc'});
 		query.skip(parseInt(req.params.lowerBound));
-		query.limit(10);
+		query.limit(parseInt(req.params.count));
 		query.exec((err, headlines) => {
 			if (err) {
 				logger.log('error', err);
@@ -111,6 +128,19 @@ module.exports = function(app, passport) {
 			}
 			return res.status(200).send(headlines);
 		});
+	});
+
+	app.delete('/api/deleteHeadline/:headlineID', function(req, res){
+		
+		Headline.find({ _id: req.params.headlineID })
+				.remove()
+				.exec((err, headline) => {
+					if (err) {
+						logger.log('error', err);
+						throw err;
+					}
+					return res.status(200).send(headline);
+				});
 	});
 
 	// frontend routes =========================================================
@@ -195,7 +225,6 @@ function isLoggedIn(req, res, next) {
 	if (req.isAuthenticated()){
 		return next();
 	}
-	console.log("redirect");
 	// if they aren't redirect them to the home page
 	res.redirect('/admin/login');
 }

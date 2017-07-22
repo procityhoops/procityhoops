@@ -497,7 +497,7 @@ angular.module('NewsFeedCtrl', ['infinite-scroll']).controller('NewsFeedControll
 	};
 
 	var getHeadlines = function(lowerBound) {
-		$http.get("/api/getHeadlines/"+lowerBound)
+		$http.get("/api/getHeadlines/"+lowerBound+"/10")
 			.then(function(response){
 				if(response.data.length === 0)
 				{

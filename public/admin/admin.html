@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app="proCityHoopsAdmin">
 <head>
 	<title>ProCity Hoops</title>
@@ -6,6 +6,8 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/js/ng-infinite-scroll.min.js"></script>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
 	<script src="/admin/js/adminRoutes.js"></script>
@@ -15,11 +17,9 @@
 	</style>
 </head>
 <body>
-<div class="container">
-	
+	<div class="container">
 		<a href="/admin/logout" class="btn btn-default pull-right"><span class="fa fa-user"></span> Logout</a>
 		<div ng-view autoscroll="true"></div>
-   
-</div>
+	</div>
 </body>
 </html>
