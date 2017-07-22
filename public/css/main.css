@@ -668,7 +668,6 @@ article {
 		font-size: 45px;
 	}
 
-
 	.western-conference .image img {
 	    height: 225px;
 		width: 225px;
@@ -879,8 +878,6 @@ article {
 	#author p {
 		font-size: 16px;
 	}
-
-
 }
 
 /* This media query is strictly so we can collapse the nav before the list
