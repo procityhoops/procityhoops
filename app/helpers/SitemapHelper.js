@@ -123,6 +123,7 @@ module.exports = {
 				{ url: '/nba-mock-draft',  changefreq: 'weekly'},
 				{ url: '/nba-super-team',  changefreq: 'weekly'},
 				{ url: '/drew-hanlen',  changefreq: 'weekly'},
+				{ url: '/nba-2016-2017-season-video',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
