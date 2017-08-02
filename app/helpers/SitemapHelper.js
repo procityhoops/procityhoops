@@ -124,6 +124,8 @@ module.exports = {
 				{ url: '/nba-super-team',  changefreq: 'weekly'},
 				{ url: '/drew-hanlen',  changefreq: 'weekly'},
 				{ url: '/nba-2016-2017-season-video',  changefreq: 'weekly'},
+				{ url: '/is-kevin-love-being-overlooked',  changefreq: 'weekly'},
+				{ url: '/karl-anthony-towns-2017-season-mix',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

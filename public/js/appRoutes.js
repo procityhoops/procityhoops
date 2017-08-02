@@ -46,6 +46,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/is-kevin-love-being-overlooked', {
+		templateUrl : 'articles/is-kevin-love-being-overlooked.html'
+	})
+
+	.when('/karl-anthony-towns-2017-season-mix', {
+		templateUrl : 'articles/karl-anthony-towns-2017-season-mix.html'
+	})
+
 	.when('/nba-2016-2017-season-video', {
 		templateUrl : 'articles/nba-2016-2017-season-video.html'
 	})
