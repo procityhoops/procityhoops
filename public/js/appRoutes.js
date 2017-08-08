@@ -46,6 +46,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/tim-duncan-epitome-of-greatness', {
+		templateUrl : 'articles/tim-duncan-epitome-of-greatness.html'
+	})
+
+	.when('/the-long-and-fruitful-journey-of-hassan-whiteside', {
+		templateUrl : 'articles/the-long-and-fruitful-journey-of-hassan-whiteside.html'
+	})
+
 	.when('/is-kevin-love-being-overlooked', {
 		templateUrl : 'articles/is-kevin-love-being-overlooked.html'
 	})
