@@ -46,6 +46,10 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/17-18-nba-games-to-watch', {
+		templateUrl : 'articles/17-18-nba-games-to-watch.html'
+	})
+
 	.when('/tim-duncan-epitome-of-greatness', {
 		templateUrl : 'articles/tim-duncan-epitome-of-greatness.html'
 	})

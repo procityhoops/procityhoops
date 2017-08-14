@@ -480,6 +480,10 @@ article {
 		font-size: 22px;
 	}
 
+	article h4 {
+		font-size: 26px;
+	}
+
 	article iframe {
 		width: 560px;
 		height: 315px;

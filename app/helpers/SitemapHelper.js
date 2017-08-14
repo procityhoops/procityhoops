@@ -128,6 +128,7 @@ module.exports = {
 				{ url: '/karl-anthony-towns-2017-season-mix',  changefreq: 'weekly'},
 				{ url: '/tim-duncan-epitome-of-greatness',  changefreq: 'weekly'},
 				{ url: '/the-long-and-fruitful-journey-of-hassan-whiteside',  changefreq: 'weekly'},
+				{ url: '/17-18-nba-games-to-watch',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
