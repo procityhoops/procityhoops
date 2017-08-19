@@ -407,6 +407,11 @@ article {
 		width: 100%;
 	}
 
+	#twok img{
+		height: 250px;
+		width: 100%;
+	}
+
 	#author p {
 		font-size: 12px;
 	}
@@ -446,7 +451,12 @@ article {
 }
 
 /* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 414px) {
+
+	#twok img{
+		height: 330px;
+		width: 100%;
+	}
 
 }
 
@@ -624,6 +634,11 @@ article {
 
 	#tweet img{
 		height: 275px;
+		width: 100%;
+	}
+
+	#twok img{
+		height: 625px;
 		width: 100%;
 	}
 
@@ -877,6 +892,11 @@ article {
 	#tweet img{
 		height: 275px;
 		width: 60%;
+	}
+
+	#twok img{
+		height: 600px;
+		width: 58%;
 	}
 
 	#author p {
