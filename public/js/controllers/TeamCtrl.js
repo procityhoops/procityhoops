@@ -8,25 +8,27 @@ angular.module('TeamCtrl', []).controller('TeamController', function($scope, $ro
 		}
 	}
 
-	$scope.currentTeamId = parseInt($routeParams.teamID);
-
-	$http.get("/api/players/"+$scope.currentTeamId)
-		.then(function(response){ 
-			$scope.players = response.data;
-			isScopeLoaded();
-	});
+	$scope.teamNickname = $routeParams.teamNickname;
 
 
-	$http.get("/api/games/"+$scope.currentTeamId)
-		.then(function(response){ 
-			$scope.recentGames = response.data;
-			isScopeLoaded();
-	});
 
 	$scope.$parent.$watch('teams', function (val) {
 		if (val)
 		{
+			$scope.currentTeamId = $filter('filter')(val, {nickname: $scope.teamNickname})[0].teamId;
 			$scope.currentTeam = $filter('filter')(val, {teamId: $scope.currentTeamId})[0].name;
+
+			$http.get("/api/players/"+$scope.currentTeamId)
+				.then(function(response){
+					$scope.players = response.data;
+					isScopeLoaded();
+			});
+
+			$http.get("/api/games/"+$scope.currentTeamId)
+				.then(function(response){ 
+					$scope.recentGames = response.data;
+					isScopeLoaded();
+			});
 			
 			if ($filter('filter')(val, {teamId: $scope.currentTeamId})[0].conference == 'East')
 			{

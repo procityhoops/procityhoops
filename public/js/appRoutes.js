@@ -10,7 +10,7 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		controller: 'HomeController'
 	})
 
-	.when('/team/:teamID', {
+	.when('/team/:teamNickname', {
 		templateUrl : 'views/team-page.html',
 		controller: 'TeamController'
 	})
