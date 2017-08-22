@@ -82,7 +82,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="eastern-conference">- View All -</a></li>
 							<li ng-repeat="team in teams | filter:{conference:'East'}">
-								<a href="team/{{team.teamId}}">{{team.name}}</a>
+								<a href="team/{{team.nickname.toLowerCase()}}">{{team.name}}</a>
 							</li>
 						</ul>
 					</li>
@@ -94,7 +94,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="western-conference">- View All -</a></li>
 							<li ng-repeat="team in teams | filter:{conference:'West'}">
-								<a href="team/{{team.teamId}}">{{team.name}}</a>
+								<a href="team/{{team.nickname.toLowerCase()}}">{{team.name}}</a>
 							</li>
 						</ul>
 					</li>
