@@ -46,6 +46,34 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/nba-2k18-player-reactions', {
+		templateUrl : 'articles/nba-2k18-player-reactions.html'
+	})
+
+	.when('/17-18-nba-games-to-watch', {
+		templateUrl : 'articles/17-18-nba-games-to-watch.html'
+	})
+
+	.when('/tim-duncan-epitome-of-greatness', {
+		templateUrl : 'articles/tim-duncan-epitome-of-greatness.html'
+	})
+
+	.when('/the-long-and-fruitful-journey-of-hassan-whiteside', {
+		templateUrl : 'articles/the-long-and-fruitful-journey-of-hassan-whiteside.html'
+	})
+
+	.when('/is-kevin-love-being-overlooked', {
+		templateUrl : 'articles/is-kevin-love-being-overlooked.html'
+	})
+
+	.when('/karl-anthony-towns-2017-season-mix', {
+		templateUrl : 'articles/karl-anthony-towns-2017-season-mix.html'
+	})
+
+	.when('/nba-2016-2017-season-video', {
+		templateUrl : 'articles/nba-2016-2017-season-video.html'
+	})
+
 	.when('/top-five-underrated-free-agency-moves', {
 		templateUrl : 'articles/top-five-underrated-free-agency-moves.html'
 	})

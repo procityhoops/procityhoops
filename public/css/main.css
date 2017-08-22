@@ -278,7 +278,7 @@ article {
 
 	.banner {
 		width: 100%;
-		height: 155px;
+		height: 170px;
 	}
 
 	p {
@@ -407,6 +407,11 @@ article {
 		width: 100%;
 	}
 
+	#twok img{
+		height: 250px;
+		width: 100%;
+	}
+
 	#author p {
 		font-size: 12px;
 	}
@@ -446,7 +451,12 @@ article {
 }
 
 /* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 414px) {
+
+	#twok img{
+		height: 330px;
+		width: 100%;
+	}
 
 }
 
@@ -477,7 +487,11 @@ article {
 	}
 
 	article p {
-		font-size: 20px;
+		font-size: 22px;
+	}
+
+	article h4 {
+		font-size: 26px;
 	}
 
 	article iframe {
@@ -623,6 +637,11 @@ article {
 		width: 100%;
 	}
 
+	#twok img{
+		height: 625px;
+		width: 100%;
+	}
+
 	#author p {
 		font-size: 16px;
 	}
@@ -699,7 +718,7 @@ article {
 	}
 
 	article img {
-		width: 60%;
+		width: 72%;
 		height: 500px;
 	}
 
@@ -710,11 +729,11 @@ article {
 
 	.banner {
 		width: 100%;
-		height: 475px;
+		height: 500px;
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.slideshow-container img {
@@ -873,6 +892,11 @@ article {
 	#tweet img{
 		height: 275px;
 		width: 60%;
+	}
+
+	#twok img{
+		height: 600px;
+		width: 58%;
 	}
 
 	#author p {

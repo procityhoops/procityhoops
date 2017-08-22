@@ -123,6 +123,13 @@ module.exports = {
 				{ url: '/nba-mock-draft',  changefreq: 'weekly'},
 				{ url: '/nba-super-team',  changefreq: 'weekly'},
 				{ url: '/drew-hanlen',  changefreq: 'weekly'},
+				{ url: '/nba-2016-2017-season-video',  changefreq: 'weekly'},
+				{ url: '/is-kevin-love-being-overlooked',  changefreq: 'weekly'},
+				{ url: '/karl-anthony-towns-2017-season-mix',  changefreq: 'weekly'},
+				{ url: '/tim-duncan-epitome-of-greatness',  changefreq: 'weekly'},
+				{ url: '/the-long-and-fruitful-journey-of-hassan-whiteside',  changefreq: 'weekly'},
+				{ url: '/17-18-nba-games-to-watch',  changefreq: 'weekly'},
+				{ url: '/nba-2k18-player-reactions',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
