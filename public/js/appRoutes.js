@@ -46,6 +46,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/the-new-look-clippers', {
+		templateUrl : 'articles/the-new-look-clippers.html'
+	})
+
+	.when('/are-the-lakers-back', {
+		templateUrl : 'articles/are-the-lakers-back.html'
+	})
+
 	.when('/nba-2k18-player-reactions', {
 		templateUrl : 'articles/nba-2k18-player-reactions.html'
 	})
