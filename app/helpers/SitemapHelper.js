@@ -162,6 +162,8 @@ module.exports = {
 				{ url: '/nba-2k18-player-reactions',  changefreq: 'weekly'},
 				{ url: '/the-new-look-clippers',  changefreq: 'weekly'},
 				{ url: '/are-the-lakers-back',  changefreq: 'weekly'},
+				{ url: '/historic-2017-nba-season',  changefreq: 'weekly'},
+				{ url: '/top-nba-kentucky-players',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
