@@ -42,6 +42,22 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-news.html'
 	})
 
+	.when('/wolfden', {
+		templateUrl : 'wolfden.html'
+	})
+
+	.when('/wolfden-wolves-articles', {
+		templateUrl : 'wolfden-wolves-articles.html'
+	})
+
+	.when('/wolfden-wolves-leaders', {
+		templateUrl : 'wolfden-wolves-leaders.html'
+	})
+
+	.when('/wolfden-wolves-history', {
+		templateUrl : 'wolfden-wolves-history.html'
+	})
+
 	.when('/nba-free-agency-previews', {
 		templateUrl : 'nba-free-agency-previews.html'
 	})
