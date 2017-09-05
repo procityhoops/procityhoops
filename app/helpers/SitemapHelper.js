@@ -168,6 +168,7 @@ module.exports = {
 				{ url: '/are-the-lakers-back',  changefreq: 'weekly'},
 				{ url: '/historic-2017-nba-season',  changefreq: 'weekly'},
 				{ url: '/top-nba-kentucky-players',  changefreq: 'weekly'},
+				{ url: '/wolfden-playoffs-or-bust',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
