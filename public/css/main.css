@@ -133,7 +133,7 @@ article {
 }
 
 
-.wolfden-history img {
+.wolfden-pages img {
 	width: 100%;
 	opacity: .3;
 }
@@ -243,8 +243,280 @@ article {
 	max-height: 450px;
 }
 
-/* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 300px) {
+
+	.western-conference .image img {
+	    height: 80px;
+		width: 80px;
+	}
+
+	.western-conference h1 {
+		font-size: 30px;
+	}
+
+	.eastern-conference .image img {
+	    height: 80px;
+		width: 80px;
+	}
+
+	.eastern-conference h1 {
+		font-size: 30px;
+	}
+
+	article p{
+		font-size: 14px;
+	}
+
+	article h1 {
+		font-size: 25px;
+	}
+
+	article h4 {
+		font-size: 18px;
+	}
+
+	article img {
+		width: 100%;
+		height: 200px;
+	}
+
+	article iframe {
+		width: 100%;
+		height: 185px;
+	}
+
+	.slideshow-container h1{
+		font-size: 25px;
+	}
+
+
+	.banner {
+		width: 100%;
+		height: 170px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	.slideshow-container img {
+		width: 100%;
+		height: 210px;
+		opacity: .5;
+	}
+
+	.slideshow-container span { 
+		position: absolute; 
+		top: 110px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.slideshow-container .articleDate { 
+		position: absolute; 
+		top: 195px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 12px;
+	}
+
+	footer {
+		height: 50px;
+		margin-top: 25px;
+	}
+	.featured-articles img {
+		width: 100%;
+		height: 225px;
+	}
+
+	.featured-articles span {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.featured-articles .articleDate {
+		position: absolute;
+		top: 175px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 15px;
+	}
+
+	.nba-draft img {
+		width: 100%;
+		height: 225px;
+	}
+
+	.nba-draft span {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-draft .articleDate {
+		position: absolute;
+		top: 175px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 15px;
+	}
+
+	.nba-news img {
+		width: 100%;
+		height: 225px;
+	}
+
+	.nba-news span {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-news .articleDate {
+		position: absolute;
+		top: 175px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 15px;
+	}
+
+	.wolfden-main img {
+		height: 170px;
+	}
+
+	.wolfden-main span {
+		position: absolute;
+		top: 75px;
+		left: 33px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 23px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	.wolfden-pages img {
+		position: relative;
+		height: 165px;
+	}
+
+	.wolfden-pages h1 {
+		position: absolute;
+		top: 110px;
+		left: 58px;
+		font-size: 30px;
+		color: #102662;
+	}
+
+	.wolfden-leaders img {
+		height: 195px;
+		width: 100%;
+	}
+
+	.wolfden-leaders h1 {
+		font-size: 25px;
+	}
+
+	.wolfden-articles h1 {
+		font-size: 25px;
+	}
+
+	.wolfden-articles h4 {
+		font-size: 16px;
+	}
+
+	#share-buttons img {
+		height: 75px;
+		width: 75px;
+}	
+
+	#kat img {
+		height: 375px;
+		width: 275px;
+}
+
+	#tweet img{
+		height: 125px;
+		width: 100%;
+	}
+
+	#twok img{
+		height: 250px;
+		width: 100%;
+	}
+
+	#author p {
+		font-size: 12px;
+	}
+
+	.mock-draft table {
+		 font-family: arial, sans-serif;
+   		 border-collapse: collapse;
+    	width: 100%;
+	}
+
+	.mock-draft td {
+    		border: 1px solid #dddddd;
+   		 text-align: center;
+   		 padding: 2px;
+	}
+
+	.mock-draft img {
+		display: block;
+   		 margin: auto;
+   		 width: 45px;
+		height: 45px;
+	}
+
+	.mock-draft th {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.mock-draft td {
+    font-size: 10px;
+	}
+
+	.mock-draft h1 {
+		font-size: 25px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 360px) {
 
 	.western-conference .image img {
 	    height: 80px;
@@ -407,6 +679,54 @@ article {
 		font-size: 15px;
 	}
 
+	.wolfden-main img {
+		height: 190px;
+	}
+
+	.wolfden-main span {
+		position: absolute;
+		top: 80px;
+		left: 53px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 25px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.wolfden-pages img {
+		position: relative;
+		height: 185px;
+	}
+
+	.wolfden-pages h1 {
+		position: absolute;
+		top: 122px;
+		left: 85px;
+		font-size: 30px;
+		color: #102662;
+	}
+
+	.wolfden-leaders img {
+		height: 210px;
+		width: 100%;
+	}
+
+	.wolfden-leaders h1 {
+		font-size: 25px;
+	}
+
+	.wolfden-articles h1 {
+		font-size: 25px;
+	}
+
+	.wolfden-articles h4 {
+		font-size: 18px;
+	}
+
 	#share-buttons img {
 		height: 75px;
 		width: 75px;
@@ -471,6 +791,50 @@ article {
 	#twok img{
 		height: 330px;
 		width: 100%;
+	}
+
+	.wolfden-main img {
+		height: 225px;
+	}
+
+	.wolfden-main span {
+		position: absolute;
+		top: 100px;
+		left: 70px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 25px;
+	}
+
+	.wolfden-pages img {
+		position: relative;
+		height: 215px;
+	}
+
+	.wolfden-pages h1 {
+		position: absolute;
+		top: 135px;
+		left: 105px;
+		font-size: 30px;
+		color: #102662;
+	}
+
+	.wolfden-leaders img {
+		height: 275px;
+		width: 100%;
+	}
+
+	.wolfden-leaders h1 {
+		font-size: 30px;
+	}
+
+	.wolfden-articles h1 {
+		font-size: 25px;
+	}
+
+	.wolfden-articles h4 {
+		font-size: 18px;
 	}
 
 }
@@ -642,6 +1006,46 @@ article {
 		height: 400px;
 	}
 
+	.wolfden-main h1{
+		font-size: 45px;
+	}
+
+	.wolfden-main img {
+		height: 340px;
+	}
+
+	.wolfden-main span {
+		position: absolute;
+		top: 150px;
+		left: 220px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.wolfden-pages img {
+		position: relative;
+		height: 350px;
+	}
+
+	.wolfden-pages h1 {
+		position: absolute;
+		top: 195px;
+		left: 220px;
+		font-size: 50px;
+		color: #102662;
+	}
+
+	.wolfden-leaders img {
+		height: 450px;
+		width: 100%;
+	}
+
+	.wolfden-leaders p {
+		font-size: 20px;
+	}
+
 	#kat img {
 		height: 500px;
 		width: 400px;
@@ -697,6 +1101,269 @@ article {
 
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1024px) {
+
+	.slideshow-container h1{
+		font-size: 45px;
+	}
+
+	.western-conference .image img {
+	    height: 225px;
+		width: 225px;
+	}
+
+	.western-conference h1 {
+		font-size: 40px;
+	}
+
+	.eastern-conference .image img {
+	    height: 225px;
+		width: 225px;
+	}
+
+	.eastern-conference h1 {
+		font-size: 40px;
+	}
+
+	article p{
+		font-size: 22px;
+	}
+
+	article h1 {
+		font-size: 32px;
+	}
+
+	article h4 {
+		font-size: 20px;
+	}
+
+	article img {
+		width: 72%;
+		height: 450px;
+	}
+
+	article iframe {
+		width: 560px;
+		height: 315px;
+	}
+
+	.banner {
+		width: 100%;
+		height: 425px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.slideshow-container img {
+		width: 100%;
+		height: 400px;
+		opacity: .5;
+	}
+
+	.slideshow-container span { 
+		position: absolute; 
+		top: 205px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.slideshow-container .articleDate { 
+		position: absolute; 
+		top: 380px; 
+		left: 0; 
+		width: 100%; 
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.featured-articles img {
+		height: 375px;
+	}
+
+	.featured-articles span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.featured-articles .articleDate {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-news img {
+		height: 350px;
+	}
+
+	.nba-news span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.nba-news .articleDate {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.nba-draft img {
+		height: 350px;
+	}
+
+	.nba-draft span {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.nba-draft .articleDate {
+		position: absolute;
+		top: 280px;
+		left: 0;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.mock-draft table {
+		 font-family: arial, sans-serif;
+   		 border-collapse: collapse;
+    	width: 90%;
+	}
+
+	.mock-draft td {
+    		border: 1px solid #dddddd;
+   		 text-align: center;
+   		 padding: 20px;
+   		 height: 100px;
+   		 width: 50px;
+	}
+
+	.mock-draft img {
+		display: block;
+   		 margin: auto;
+   		 width: 105px;
+		height: 105px;
+	}
+
+	.mock-draft th {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.mock-draft td {
+    font-size: 25px;
+	}
+
+	.mock-draft h1 {
+		font-size: 30px;
+	}
+
+	footer {
+		height: 75px;
+		margin-top: 25px;
+	}
+
+	body{
+		margin-bottom: 80px;
+	}
+
+	.wolfden-main h1{
+		font-size: 45px;
+	}
+
+	.wolfden-main img {
+		height: 375px;
+	}
+
+	.wolfden-main span {
+		position: absolute;
+		top: 160px;
+		left: 345px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 35px;
+	}
+
+	.wolfden-pages img {
+		position: relative;
+		height: 425px;
+	}
+
+	.wolfden-pages h1 {
+		position: absolute;
+		top: 230px;
+		left: 375px;
+		font-size: 50px;
+		color: #102662;
+	}
+
+	.wolfden-leaders p {
+		font-size: 22px;
+	}
+
+	.wolfden-leaders img {
+		height: 500px;
+		width: 100%;
+	}
+
+	#share-buttons img {
+		height: 100px;
+		width: 100px;
+}
+
+	#kat img {
+		height: 550px;
+		width: 375px;
+}
+
+	#tweet img{
+		height: 275px;
+		width: 60%;
+	}
+
+	#twok img{
+		height: 600px;
+		width: 58%;
+	}
+
+	#author p {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 1050px) {
 
 	.slideshow-container h1{
 		font-size: 45px;
@@ -912,17 +1579,26 @@ article {
 		font-size: 35px;
 	}
 
-	.wolfden-history img {
+	.wolfden-pages img {
 		position: relative;
 		height: 450px;
 	}
 
-	.wolfden-history h1 {
+	.wolfden-pages h1 {
 		position: absolute;
 		top: 225px;
 		left: 750px;
 		font-size: 50px;
 		color: #102662;
+	}
+
+	.wolfden-leaders img {
+		height: 400px;
+		width: 100%;
+	}
+
+	.wolfden-leaders p {
+		font-size: 20px;
 	}
 
 	#share-buttons img {

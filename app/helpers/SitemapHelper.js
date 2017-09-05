@@ -14,6 +14,8 @@ module.exports = {
 				{ url: '/standing/east',  changefreq: 'daily'},
 				{ url: '/wolfden',  changefreq: 'daily'},
 				{ url: '/wolfden-wolves-history',  changefreq: 'weekly'},
+				{ url: '/wolfden-wolves-leaders',  changefreq: 'weekly'},
+				{ url: '/wolfden-wolves-articles',  changefreq: 'weekly'},
 				{ url: '/eastern-conference',  changefreq: 'weekly'},
 				{ url: '/western-conference',  changefreq: 'weekly'},
 				{ url: '/nba-news',  changefreq: 'weekly'},
