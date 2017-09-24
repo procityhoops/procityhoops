@@ -62,6 +62,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'nba-free-agency-previews.html'
 	})
 
+	.when('/the-next-big-thing-nikola-jokic', {
+		templateUrl : 'articles/the-next-big-thing-nikola-jokic.html'
+	})
+
+	.when('/top-nba-duke-players', {
+		templateUrl : 'articles/top-nba-duke-players.html'
+	})
+
 	.when('/wolfden-playoffs-or-bust', {
 		templateUrl : 'articles/wolfden-playoffs-or-bust.html'
 	})
