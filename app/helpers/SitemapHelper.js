@@ -171,6 +171,7 @@ module.exports = {
 				{ url: '/wolfden-playoffs-or-bust',  changefreq: 'weekly'},
 				{ url: '/top-nba-duke-players',  changefreq: 'weekly'},
 				{ url: '/the-next-big-thing-nikola-jokic',  changefreq: 'weekly'},
+				{ url: '/wolfden-wolves-lakers-9-30-17',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

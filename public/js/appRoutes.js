@@ -74,6 +74,10 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-playoffs-or-bust.html'
 	})
 
+	.when('/wolfden-wolves-lakers-9-30-17', {
+		templateUrl : 'articles/wolfden-wolves-lakers-9-30-17.html'
+	})
+
 	.when('/top-nba-kentucky-players', {
 		templateUrl : 'articles/top-nba-kentucky-players.html'
 	})
