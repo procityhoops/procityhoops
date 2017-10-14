@@ -1418,6 +1418,11 @@ article {
 		font-size: 20px;
 	}
 
+	h1 {
+		font-size: 40px;
+	}
+
+
 	.slideshow-container img {
 		width: 100%;
 		height: 400px;
