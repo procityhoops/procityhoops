@@ -58,6 +58,18 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'wolfden-wolves-history.html'
 	})
 
+	.when('/wolfden-season-preview-questions-2017-2018', {
+		templateUrl : 'articles/wolfden-season-preview-questions-2017-2018.html'
+	})
+
+	.when('/nba-season-preview-questions-2017-2018', {
+		templateUrl : 'articles/nba-season-preview-questions-2017-2018.html'
+	})
+
+	.when('/nba-standings-and-playoff-predictions-2017-2018', {
+		templateUrl : 'articles/nba-standings-and-playoff-predictions-2017-2018.html'
+	})
+
 	.when('/nba-free-agency-previews', {
 		templateUrl : 'nba-free-agency-previews.html'
 	})

@@ -172,6 +172,9 @@ module.exports = {
 				{ url: '/top-nba-duke-players',  changefreq: 'weekly'},
 				{ url: '/the-next-big-thing-nikola-jokic',  changefreq: 'weekly'},
 				{ url: '/wolfden-wolves-lakers-9-30-17',  changefreq: 'weekly'},
+				{ url: '/wolfden-season-preview-questions-2017-2018',  changefreq: 'weekly'},
+				{ url: '/nba-standings-and-playoff-predictions-2017-2018',  changefreq: 'weekly'},
+				{ url: '/nba-season-preview-questions-2017-2018',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
