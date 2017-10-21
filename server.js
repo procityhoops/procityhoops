@@ -9,16 +9,29 @@ var passport 	   = require('passport');
 var cookieParser   = require('cookie-parser');
 var session        = require('express-session');
 var flash    	   = require('connect-flash');
+var schedule 	   = require('node-schedule');
+var logger 		   = require('winston');
 
 // configuration ===========================================
 	
 // config files
 var db = require('./config/db');
 
-
 var port = process.env.PORT || 8080; // set our port
 mongoose.connect(db.url); // connect to our mongoDB database (commented out after you enter in your own credentials)
 require('./app/models/models');
+
+var appUtil = require('./app/util');
+
+// seconds - minutes - hours - day of month - month - day of week
+var j = schedule.scheduleJob('5 * * * * *', function(){
+  appUtil.refreshGames();
+  appUtil.refreshTeams();
+  appUtil.refreshPlayers();
+  
+  var date = new Date(new Date().getTime()).toLocaleString();
+  logger.log('info', "Data refreshed at " + date);
+});
 
 // get all data/stuff of the body (POST) parameters
 app.use(bodyParser.json()); // parse application/json 

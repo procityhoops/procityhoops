@@ -12,7 +12,7 @@ var saveGames = function () {
 	console.log("saving games");
 	nba.stats.leagueGamelog({
 		LeagueID: "00",
-		Season: "2016-17",
+		Season: "2017-18",
 		SeasonType: "Regular Season",
 		Direction: "DESC",
 		Sorter: "DATE",
@@ -69,7 +69,7 @@ var saveTeams = function () {
 
 	//get team standings
 	nba.data.conferenceStandings({
-		year: 2016
+		year: 2017
 	}).then(function(res) {
 
 		var easternConfStandings = res.league.standard.conference.east;
@@ -77,7 +77,7 @@ var saveTeams = function () {
 
 		//get team data
 		nba.data.teams({
-			year: 2016
+			year: 2017
 		}).then(function(res) {
 			Team.remove(function(err,removed) {
 				console.log("Removed " + removed + " teams.");
@@ -129,7 +129,7 @@ var savePlayers = function () {
 	//repopulate
 	nba.stats.playerBioStats({
 		LeagueID: '00',
-		Season: '2016-17',
+		Season: '2017-18',
 		perMode: 'PerGame',
 		seasonType: 'Regular Season'
 	}).then(function(res) {
