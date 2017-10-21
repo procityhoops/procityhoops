@@ -24,11 +24,11 @@ require('./app/models/models');
 var appUtil = require('./app/util');
 
 // seconds - minutes - hours - day of month - month - day of week
-var j = schedule.scheduleJob('5 * * * * *', function(){
+var j = schedule.scheduleJob('* * 8 * * *', function(){
   appUtil.refreshGames();
   appUtil.refreshTeams();
   appUtil.refreshPlayers();
-  
+
   var date = new Date(new Date().getTime()).toLocaleString();
   logger.log('info', "Data refreshed at " + date);
 });
