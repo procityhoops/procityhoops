@@ -24,13 +24,25 @@ require('./app/models/models');
 var appUtil = require('./app/util');
 
 // seconds - minutes - hours - day of month - month - day of week
-var j = schedule.scheduleJob('0 8 * * *', function(){
+var games = schedule.scheduleJob('0 5 * * *', function(){
   appUtil.refreshGames();
+
+  var date = new Date(new Date().getTime()).toLocaleString();
+  logger.log('info', "Games refreshed at " + date);
+});
+
+var teams = schedule.scheduleJob('0 6 * * *', function(){
   appUtil.refreshTeams();
+
+  var date = new Date(new Date().getTime()).toLocaleString();
+  logger.log('info', "Teams refreshed at " + date);
+});
+
+var players = schedule.scheduleJob('0 7 * * *', function(){
   appUtil.refreshPlayers();
 
   var date = new Date(new Date().getTime()).toLocaleString();
-  logger.log('info', "Data refreshed at " + date);
+  logger.log('info', "Players refreshed at " + date);
 });
 
 // get all data/stuff of the body (POST) parameters
