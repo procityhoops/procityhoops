@@ -24,7 +24,7 @@ require('./app/models/models');
 var appUtil = require('./app/util');
 
 // seconds - minutes - hours - day of month - month - day of week
-var j = schedule.scheduleJob('* * 8 * * *', function(){
+var j = schedule.scheduleJob('0 8 * * *', function(){
   appUtil.refreshGames();
   appUtil.refreshTeams();
   appUtil.refreshPlayers();
