@@ -62,6 +62,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-season-preview-questions-2017-2018.html'
 	})
 
+	.when('/steph-curry-cooking-up-change', {
+		templateUrl : 'articles/steph-curry-cooking-up-change.html'
+	})
+
+	.when('/ricky-rubio-hot-start-in-utah', {
+		templateUrl : 'articles/ricky-rubio-hot-start-in-utah.html'
+	})
+
 	.when('/nba-season-preview-questions-2017-2018', {
 		templateUrl : 'articles/nba-season-preview-questions-2017-2018.html'
 	})
