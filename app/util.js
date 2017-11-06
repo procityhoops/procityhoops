@@ -22,6 +22,7 @@ var saveGames = function () {
 			return obj1.game_id - obj2.game_id;
 		});
 		Game.remove(function(err,removed) {
+			console.log(err);
 			console.log("Removed " + removed + " games.");
 
 			for (i = 0; i < games.length; i = i + 2) { 
@@ -80,6 +81,7 @@ var saveTeams = function () {
 			year: 2017
 		}).then(function(res) {
 			Team.remove(function(err,removed) {
+				console.log(err);
 				console.log("Removed " + removed + " teams.");
 
 				var teams = res.league.standard;
@@ -135,6 +137,7 @@ var savePlayers = function () {
 	}).then(function(res) {
 		// empty team collection
 		Player.remove(function(err,removed) {
+			console.log(err);
 			console.log("Removed " + removed + " players.");
 
 			var players = res.LeagueDashPlayerBioStats;
