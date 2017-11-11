@@ -10,8 +10,6 @@ angular.module('TeamCtrl', []).controller('TeamController', function($scope, $ro
 
 	$scope.teamNickname = $routeParams.teamNickname;
 
-
-
 	$scope.$parent.$watch('teams', function (val) {
 		if (val)
 		{
@@ -58,4 +56,11 @@ angular.module('TeamCtrl', []).controller('TeamController', function($scope, $ro
 		$scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
 		$scope.propertyName = propertyName;
 	};
+
+	$scope.convertToUTC = function(dt) {
+		var localDate = new Date(dt);
+		var localTime = localDate.getTime();
+		var localOffset = localDate.getTimezoneOffset() * 60000;
+		return new Date(localTime + localOffset);
+	}
 });

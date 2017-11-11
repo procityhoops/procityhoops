@@ -67,7 +67,7 @@
 				<tbody>
 					<tr ng-repeat="game in recentGames">
 						<td>{{game.matchup}}</td>
-						<td>{{game.gameDate | date : "M/d/yy"}}</td>
+						<td>{{convertToUTC(game.gameDate) | date : "M/d/yy"}}</td>
 						<td>{{game.score}}</td>
 						<td ng-class="game.winLoss === 'W' ? 'game-won' : 'game-lost'">{{game.winLoss}}</td>
 					</tr>
