@@ -177,6 +177,7 @@ module.exports = {
 				{ url: '/nba-season-preview-questions-2017-2018',  changefreq: 'weekly'},
 				{ url: '/ricky-rubio-hot-start-in-utah',  changefreq: 'weekly'},
 				{ url: '/steph-curry-cooking-up-change',  changefreq: 'weekly'},
+				{ url: '/wolfden-wolves-warriors-preview-11-8-17',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
