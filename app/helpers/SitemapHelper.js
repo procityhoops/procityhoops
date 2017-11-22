@@ -178,6 +178,7 @@ module.exports = {
 				{ url: '/ricky-rubio-hot-start-in-utah',  changefreq: 'weekly'},
 				{ url: '/steph-curry-cooking-up-change',  changefreq: 'weekly'},
 				{ url: '/wolfden-wolves-warriors-preview-11-8-17',  changefreq: 'weekly'},
+				{ url: '/wolfden-timberwolves-the-good-bad-great-and-ugly',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

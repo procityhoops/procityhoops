@@ -66,6 +66,10 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-wolves-warriors-preview-11-8-17.html'
 	})
 
+	.when('/wolfden-timberwolves-the-good-bad-great-and-ugly', {
+		templateUrl : 'articles/wolfden-timberwolves-the-good-bad-great-and-ugly.html'
+	})
+
 	.when('/steph-curry-cooking-up-change', {
 		templateUrl : 'articles/steph-curry-cooking-up-change.html'
 	})
