@@ -70,6 +70,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-timberwolves-the-good-bad-great-and-ugly.html'
 	})
 
+	.when('/booed-to-beloved', {
+		templateUrl : 'articles/booed-to-beloved.html'
+	})
+
+	.when('/ben-simmons-early-season-surge', {
+		templateUrl : 'articles/ben-simmons-early-season-surge.html'
+	})
+
 	.when('/steph-curry-cooking-up-change', {
 		templateUrl : 'articles/steph-curry-cooking-up-change.html'
 	})

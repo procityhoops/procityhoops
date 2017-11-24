@@ -1629,6 +1629,11 @@ article {
 	#author p {
 		font-size: 16px;
 	}
+
+	#chart img {
+		height: 550px;
+		width: 55%;
+	}
 }
 
 /* This media query is strictly so we can collapse the nav before the list
