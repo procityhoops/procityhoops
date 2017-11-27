@@ -70,6 +70,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-timberwolves-the-good-bad-great-and-ugly.html'
 	})
 
+	.when('/alfonzo-mckinnie-incredible-path-to-the-nba', {
+		templateUrl : 'articles/alfonzo-mckinnie-incredible-path-to-the-nba.html'
+	})
+
+	.when('/nba-quarter-season-awards', {
+		templateUrl : 'articles/nba-quarter-season-awards.html'
+	})
+
 	.when('/booed-to-beloved', {
 		templateUrl : 'articles/booed-to-beloved.html'
 	})

@@ -181,6 +181,8 @@ module.exports = {
 				{ url: '/wolfden-timberwolves-the-good-bad-great-and-ugly',  changefreq: 'weekly'},
 				{ url: '/ben-simmons-early-season-surge',  changefreq: 'weekly'},
 				{ url: '/booed-to-beloved',  changefreq: 'weekly'},
+				{ url: '/alfonzo-mckinnie-incredible-path-to-the-nba',  changefreq: 'weekly'},
+				{ url: '/nba-quarter-season-awards',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
