@@ -313,7 +313,7 @@ article {
 		color: #ffffff;
 		text-align: center;
 		font-weight: bolder;
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.slideshow-container .articleDate { 
@@ -343,7 +343,7 @@ article {
 		color: #ffffff;
 		text-align: center;
 		font-weight: bolder;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.featured-articles .articleDate {
@@ -586,7 +586,7 @@ article {
 		color: #ffffff;
 		text-align: center;
 		font-weight: bolder;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.slideshow-container .articleDate { 
