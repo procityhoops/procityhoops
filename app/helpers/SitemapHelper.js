@@ -184,6 +184,8 @@ module.exports = {
 				{ url: '/alfonzo-mckinnie-incredible-path-to-the-nba',  changefreq: 'weekly'},
 				{ url: '/nba-quarter-season-awards',  changefreq: 'weekly'},
 				{ url: '/wolfden-timberwolves-early-season-player-grades',  changefreq: 'weekly'},
+				{ url: '/europe-wonderboy',  changefreq: 'weekly'},
+				{ url: '/khris-middleton-and-bradley-beal-by-the-numbers',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

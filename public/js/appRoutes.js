@@ -74,6 +74,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-timberwolves-early-season-player-grades.html'
 	})
 
+	.when('/europe-wonderboy', {
+		templateUrl : 'articles/europe-wonderboy.html'
+	})
+
+	.when('/khris-middleton-and-bradley-beal-by-the-numbers', {
+		templateUrl : 'articles/khris-middleton-and-bradley-beal-by-the-numbers.html'
+	})
+
 	.when('/alfonzo-mckinnie-incredible-path-to-the-nba', {
 		templateUrl : 'articles/alfonzo-mckinnie-incredible-path-to-the-nba.html'
 	})
