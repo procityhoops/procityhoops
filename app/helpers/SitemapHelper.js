@@ -186,6 +186,7 @@ module.exports = {
 				{ url: '/wolfden-timberwolves-early-season-player-grades',  changefreq: 'weekly'},
 				{ url: '/europe-wonderboy',  changefreq: 'weekly'},
 				{ url: '/khris-middleton-and-bradley-beal-by-the-numbers',  changefreq: 'weekly'},
+				{ url: '/wolfden-jimmy-butler-mvp-candidate',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
