@@ -187,6 +187,7 @@ module.exports = {
 				{ url: '/europe-wonderboy',  changefreq: 'weekly'},
 				{ url: '/khris-middleton-and-bradley-beal-by-the-numbers',  changefreq: 'weekly'},
 				{ url: '/wolfden-jimmy-butler-mvp-candidate',  changefreq: 'weekly'},
+				{ url: '/lines-of-the-night',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
