@@ -178,6 +178,16 @@ module.exports = {
 				{ url: '/ricky-rubio-hot-start-in-utah',  changefreq: 'weekly'},
 				{ url: '/steph-curry-cooking-up-change',  changefreq: 'weekly'},
 				{ url: '/wolfden-wolves-warriors-preview-11-8-17',  changefreq: 'weekly'},
+				{ url: '/wolfden-timberwolves-the-good-bad-great-and-ugly',  changefreq: 'weekly'},
+				{ url: '/ben-simmons-early-season-surge',  changefreq: 'weekly'},
+				{ url: '/booed-to-beloved',  changefreq: 'weekly'},
+				{ url: '/alfonzo-mckinnie-incredible-path-to-the-nba',  changefreq: 'weekly'},
+				{ url: '/nba-quarter-season-awards',  changefreq: 'weekly'},
+				{ url: '/wolfden-timberwolves-early-season-player-grades',  changefreq: 'weekly'},
+				{ url: '/europe-wonderboy',  changefreq: 'weekly'},
+				{ url: '/khris-middleton-and-bradley-beal-by-the-numbers',  changefreq: 'weekly'},
+				{ url: '/wolfden-jimmy-butler-mvp-candidate',  changefreq: 'weekly'},
+				{ url: '/lines-of-the-night',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

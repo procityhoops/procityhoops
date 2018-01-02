@@ -66,6 +66,46 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-wolves-warriors-preview-11-8-17.html'
 	})
 
+	.when('/wolfden-timberwolves-the-good-bad-great-and-ugly', {
+		templateUrl : 'articles/wolfden-timberwolves-the-good-bad-great-and-ugly.html'
+	})
+
+	.when('/wolfden-timberwolves-early-season-player-grades', {
+		templateUrl : 'articles/wolfden-timberwolves-early-season-player-grades.html'
+	})
+
+	.when('/wolfden-jimmy-butler-mvp-candidate', {
+		templateUrl : 'articles/wolfden-jimmy-butler-mvp-candidate.html'
+	})
+
+	.when('/lines-of-the-night', {
+		templateUrl : 'articles/lines-of-the-night.html'
+	})
+
+	.when('/europe-wonderboy', {
+		templateUrl : 'articles/europe-wonderboy.html'
+	})
+
+	.when('/khris-middleton-and-bradley-beal-by-the-numbers', {
+		templateUrl : 'articles/khris-middleton-and-bradley-beal-by-the-numbers.html'
+	})
+
+	.when('/alfonzo-mckinnie-incredible-path-to-the-nba', {
+		templateUrl : 'articles/alfonzo-mckinnie-incredible-path-to-the-nba.html'
+	})
+
+	.when('/nba-quarter-season-awards', {
+		templateUrl : 'articles/nba-quarter-season-awards.html'
+	})
+
+	.when('/booed-to-beloved', {
+		templateUrl : 'articles/booed-to-beloved.html'
+	})
+
+	.when('/ben-simmons-early-season-surge', {
+		templateUrl : 'articles/ben-simmons-early-season-surge.html'
+	})
+
 	.when('/steph-curry-cooking-up-change', {
 		templateUrl : 'articles/steph-curry-cooking-up-change.html'
 	})
