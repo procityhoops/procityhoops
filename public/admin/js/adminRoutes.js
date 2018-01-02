@@ -78,7 +78,7 @@ angular.module('AdminCtrl', ['infinite-scroll']).controller('AdminController', f
 		var today = new Date();
 		$('#dateAdded').text($filter('date')(today));
 		$('#title').val('');
-		$('#text').val('');
+		$('#text').summernote('code', '');
 		$('#editHeadline #headlineID').val('');
 		$('#editHeadline').modal('show');
 	});
@@ -88,7 +88,7 @@ angular.module('AdminCtrl', ['infinite-scroll']).controller('AdminController', f
 		
 		$('#title').val(headline[0].title);
 		$('#dateAdded').text($filter('date')(headline[0].dateAdded));
-		$('#text').val(headline[0].text);
+		$('#text').summernote('code', headline[0].text);
 		$('#editHeadline #headlineID').val(headline[0]._id);
 		$('#editHeadline').modal('show');
 	}
@@ -99,7 +99,7 @@ angular.module('AdminCtrl', ['infinite-scroll']).controller('AdminController', f
 		var headline = $.grep($scope.headlines, function(e){ return e._id == headlineID; });
 		$('#headlineTitle').text(headline[0].title);
 		$('#headlineDate').text($filter('date')(headline[0].dateAdded));
-		$('#headlineText').text(headline[0].text);
+		$('#headlineText').html(headline[0].text);
 
 		$('#deleteHeadlineModal #headlineID').val(headline[0]._id);
 

@@ -14,7 +14,7 @@
 		<div  style="text-align: center;">
 			<div class="headline-header">{{headline.title}}</div>
 			<span style="color: grey">{{headline.dateAdded  | date : "M/d/yy"}}</span>
-			<article>{{headline.text}}</article>
+			<article ng-bind-html="headline.text"></article>
 		</div>
 	</div>
 </div>

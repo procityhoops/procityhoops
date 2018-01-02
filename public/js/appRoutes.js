@@ -581,7 +581,7 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 	.otherwise({templateUrl:'views/404.html'});
 });
 
-angular.module('NewsFeedCtrl', ['infinite-scroll']).controller('NewsFeedController', function($scope, $http, $window, $location) {
+angular.module('NewsFeedCtrl', ['infinite-scroll']).controller('NewsFeedController', function($scope, $http, $window, $location, $sce) {
 
 	$scope.headlines = [];
 	$scope.lowerBound = 0;
@@ -603,6 +603,12 @@ angular.module('NewsFeedCtrl', ['infinite-scroll']).controller('NewsFeedControll
 				{
 					$scope.stopLoading = true;
 				}
+
+				response.data = response.data.map(function(headline) {
+					headline.text = $sce.trustAsHtml(headline.text);
+					return headline;
+				});
+
 				Array.prototype.push.apply($scope.headlines, response.data);
 				$scope.lowerBound += 10;
 				$scope.isBusy = false;
