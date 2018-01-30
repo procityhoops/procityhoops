@@ -58,6 +58,10 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'wolfden-wolves-history.html'
 	})
 
+	.when('/wolfden-wolves-interesting-facts', {
+		templateUrl : 'articles/wolfden-wolves-interesting-facts.html'
+	})
+
 	.when('/wolfden-season-preview-questions-2017-2018', {
 		templateUrl : 'articles/wolfden-season-preview-questions-2017-2018.html'
 	})
