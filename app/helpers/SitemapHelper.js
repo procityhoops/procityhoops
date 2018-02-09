@@ -189,6 +189,8 @@ module.exports = {
 				{ url: '/wolfden-jimmy-butler-mvp-candidate',  changefreq: 'weekly'},
 				{ url: '/lines-of-the-night',  changefreq: 'weekly'},
 				{ url: '/wolfden-wolves-interesting-facts',  changefreq: 'weekly'},
+				{ url: '/trade-deadline-q-and-a',  changefreq: 'weekly'},
+				{ url: '/trade-deadline-playoff-predictions',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

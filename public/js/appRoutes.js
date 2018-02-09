@@ -82,6 +82,15 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-jimmy-butler-mvp-candidate.html'
 	})
 
+	.when('/trade-deadline-q-and-a', {
+		templateUrl : 'articles/trade-deadline-q-and-a.html'
+	})
+
+	.when('/trade-deadline-playoff-predictions', {
+		templateUrl : 'articles/trade-deadline-playoff-predictions.html'
+	})
+
+
 	.when('/lines-of-the-night', {
 		templateUrl : 'articles/lines-of-the-night.html'
 	})
