@@ -191,6 +191,7 @@ module.exports = {
 				{ url: '/wolfden-wolves-interesting-facts',  changefreq: 'weekly'},
 				{ url: '/trade-deadline-q-and-a',  changefreq: 'weekly'},
 				{ url: '/trade-deadline-playoff-predictions',  changefreq: 'weekly'},
+				{ url: '/wolfden-jimmy-butler-injury-how-do-wolves-get-by',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
