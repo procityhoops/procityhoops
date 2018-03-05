@@ -192,6 +192,8 @@ module.exports = {
 				{ url: '/trade-deadline-q-and-a',  changefreq: 'weekly'},
 				{ url: '/trade-deadline-playoff-predictions',  changefreq: 'weekly'},
 				{ url: '/wolfden-jimmy-butler-injury-how-do-wolves-get-by',  changefreq: 'weekly'},
+				{ url: '/wild-wild-west',  changefreq: 'weekly'},
+				{ url: '/top-five-players-in-five-years',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
