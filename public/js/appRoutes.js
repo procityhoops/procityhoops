@@ -86,6 +86,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-jimmy-butler-mvp-candidate.html'
 	})
 
+	.when('/the-nba-is-back', {
+		templateUrl : 'articles/the-nba-is-back.html'
+	})
+
+	.when('/moving-the-max', {
+		templateUrl : 'articles/moving-the-max.html'
+	})
+
 	.when('/wild-wild-west', {
 		templateUrl : 'articles/wild-wild-west.html'
 	})

@@ -194,6 +194,8 @@ module.exports = {
 				{ url: '/wolfden-jimmy-butler-injury-how-do-wolves-get-by',  changefreq: 'weekly'},
 				{ url: '/wild-wild-west',  changefreq: 'weekly'},
 				{ url: '/top-five-players-in-five-years',  changefreq: 'weekly'},
+				{ url: '/the-nba-is-back',  changefreq: 'weekly'},
+				{ url: '/moving-the-max',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});
