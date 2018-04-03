@@ -196,6 +196,8 @@ module.exports = {
 				{ url: '/top-five-players-in-five-years',  changefreq: 'weekly'},
 				{ url: '/the-nba-is-back',  changefreq: 'weekly'},
 				{ url: '/moving-the-max',  changefreq: 'weekly'},
+				{ url: '/are-the-thunder-better-without-carmelo',  changefreq: 'weekly'},
+				{ url: '/rudy-gobert-leading-utah-to-the-playoffs',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

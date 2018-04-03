@@ -86,6 +86,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-jimmy-butler-mvp-candidate.html'
 	})
 
+	.when('/rudy-gobert-leading-utah-to-the-playoffs', {
+		templateUrl : 'articles/rudy-gobert-leading-utah-to-the-playoffs.html'
+	})
+
+	.when('/are-the-thunder-better-without-carmelo', {
+		templateUrl : 'articles/are-the-thunder-better-without-carmelo.html'
+	})
+
 	.when('/the-nba-is-back', {
 		templateUrl : 'articles/the-nba-is-back.html'
 	})
