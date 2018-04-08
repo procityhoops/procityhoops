@@ -200,6 +200,7 @@ module.exports = {
 				{ url: '/rudy-gobert-leading-utah-to-the-playoffs',  changefreq: 'weekly'},
 				{ url: '/tratorade',  changefreq: 'weekly'},
 				{ url: '/nba-improvers',  changefreq: 'weekly'},
+				{ url: '/wolfden-the-many-opinions-on-thibs',  changefreq: 'weekly'},
 				{ url: '/featured-articles',  changefreq: 'daily'}
 			]
 		});

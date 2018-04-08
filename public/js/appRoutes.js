@@ -58,6 +58,10 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'wolfden-wolves-history.html'
 	})
 
+	.when('/wolfden-the-many-opinions-on-thibs', {
+		templateUrl : 'articles/wolfden-the-many-opinions-on-thibs.html'
+	})
+
 	.when('/wolfden-jimmy-butler-injury-how-do-wolves-get-by', {
 		templateUrl : 'articles/wolfden-jimmy-butler-injury-how-do-wolves-get-by.html'
 	})
