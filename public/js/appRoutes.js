@@ -90,6 +90,14 @@ angular.module('appRoutes', ['NewsFeedCtrl']).config(function($routeProvider, $l
 		templateUrl : 'articles/wolfden-jimmy-butler-mvp-candidate.html'
 	})
 
+	.when('/baller-or-bust', {
+		templateUrl : 'articles/baller-or-bust.html'
+	})
+
+	.when('/are-the-17-18-jazz-better-than-the-16-17-jazz', {
+		templateUrl : 'articles/are-the-17-18-jazz-better-than-the-16-17-jazz.html'
+	})
+
 	.when('/tratorade', {
 		templateUrl : 'articles/tratorade.html'
 	})
